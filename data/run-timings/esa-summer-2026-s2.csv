@@ -1,0 +1,64 @@
+,UUID,GameName,CategoryName,PlayerNamesTwitch,StartTimestamp,EndTimestamp,TimerStartTimestamp,TimerEndTimestamp,IntroTime,OutroTime,,Estimate,Actual Time,% Off Estimate,Setup Time
+,81c3c509-6dd8-4b84-8b81-30a0801739e0,Croc 2,Any%,"{""hypnoshark"":""hypnoshark""}",1785676468,1785681205,1785676579,1785681117,111,88,,01:25:00,1:15:38,-11.02%,
+,a6c1db71-3e1a-4a12-aacf-74ac12b15e66,Doronko Wanko,All Gifts (NG+),"{""spaceloz"":""unknown""}",1785681960,1785682991,1785682095,1785682756,135,235,,00:15:00,0:11:01,-26.56%,0:12:35
+,7e13b629-425b-47de-8d8d-483d52add263,New Super Luigi U,All Castles (Normal),"{""craZy_y0"":""craZy_y0""}",1785683880,1785688009,1785684110,1785687873,230,136,,01:12:00,1:02:43,-12.89%,0:14:49
+,a2653cc6-70ea-410d-852b-4a83e2e869c7,Donald Duck: Goin' Quackers,Any%,"{""AbyssToaster"":""AbyssToaster""}",1785688779,1785691864,1785688826,1785691790,47,74,,00:55:00,0:49:24,-10.18%,0:12:50
+,1c505926-15d1-4c5a-bb39-c77bd901fb86,Spyro: Shadow Legacy,Any%,"{""Syn_SR"":""Syn_SR""}",1785693308,1785695589,1785693379,1785695536,71,53,,00:32:00,0:35:57,12.34%,0:24:04
+,6ca8b2ef-ebb9-4fa9-a1be-0ede1f46fb0b,UFO 50,Cyber Owls (Gold),"{""Flick"":""flickazures""}",1785696218,1785696996,1785696263,1785696934,45,62,,00:15:00,0:11:11,-25.44%,0:10:29
+,32ba5cc4-1500-4aaa-a381-41c005c5afa4,UFO 50,Pingolf,"{""Flick"":""flickazures""}",1785697101,1785697478,1785697142,1785697421,41,57,,00:05:00,0:04:39,-7.00%,0:01:45
+,0aa6af42-16cc-4b28-a527-4cf621e6501a,Super Mario 63,1,"{""Vertic"":""Vertic03""}",1785697995,1785701250,1785698036,1785701145,41,105,,00:55:00,0:51:49,-5.79%,0:08:37
+,6b21cb14-15d5-4454-9edd-53a0f6fc1f3d,Spelunky Series,Triathlon - Any%,"{""Flick"":""flickazures""}",1785701874,1785703927,1785701922,1785703787,48,140,,00:30:00,0:31:05,3.61%,0:10:24
+,3747ecaa-3d1d-4c66-a3ba-c5ac68514c66,Fates of Ort,Best Ending,"{""DonDoli"":""DonDoli""}",1785747892,1785751146,1785748014,1785751055,122,91,,01:10:00,0:50:41,-27.60%,
+,9f46861b-a24d-477c-8de0-9fe069935d9c,Rebel Transmute,Any%,"{""cidiya"":""cidiya""}",1785752130,1785756348,1785752210,1785756297,80,51,,01:05:00,1:08:07,4.79%,0:16:24
+,522986fd-6a63-4724-99a6-539909ca9c25,Castlevania: Rondo of Blood,1,"{""CasinoCoin"":""casinocoin""}",1785757153,1785759765,1785757258,1785759672,105,93,,00:55:00,0:40:14,-26.85%,0:13:25
+,5db670d1-b2f0-4cf9-b08e-ca0b4a8a8c0f,Super Mario Bros. 3,1,"{""yatokami9"":""Yatokami9""}",1785761284,1785766110,1785761378,1785766033,94,77,,01:20:00,1:17:35,-3.02%,0:25:19
+,75e10a21-861d-4f01-8dad-15cd36f45c54,Arnie Hour,Beat the Game(s),"{""ScarfaceNico"":""ScarfaceNico""}",1785766953,1785771218,1785767016,1785771095,63,123,,01:30:00,1:07:59,-24.46%,0:14:03
+,76fa926f-5433-4cc6-a88d-a2d686ad7795,Drill Dozer,Any%,"{""BluMagma"":""BluMagma7""}",1785772315,1785780322,1785772420,1785779992,105,330,,02:15:00,2:06:12,-6.52%,0:18:17
+,50f5a18c-550e-41a9-a458-b50df97645fe,Mega Man 4,Any% (Buster Only),"{""prisiii3"":""prisiii3""}",1785781121,1785783972,1785781205,1785783886,84,86,,00:47:00,0:44:41,-4.93%,0:13:19
+,f2664590-7e8d-4595-977e-257d764d0cf3,Escape from Monkey Island,Any%,"{""FineAndDanD"":""FineAndDanD""}",1785785251,1785789970,1785785317,1785789774,66,196,,01:10:00,1:14:17,6.12%,0:21:19
+,23cf99af-407f-4e09-9597-8d5758ae18a8,Hades,"3 Weapons, 32 Heat","{""OckE"":""OckE93""}",1785790738,1785795063,1785790887,1785794904,149,159,,01:15:00,1:06:57,-10.73%,0:12:48
+,fa1d1aca-341c-4f2b-b036-30def0db68ab,Blazing Chrome,"Arcade Mode (Normal, Gun)","{""Kirthar"":""Kirthar""}",1785834055,1785835741,1785834126,1785835684,71,57,,00:30:00,0:25:58,-13.44%,
+,e51a7172-6d03-4604-b8d0-86af725db7dc,Smushi Come Home,All Achievements,"{""spaceloz"":""unknown""}",1785836344,1785843430,1785836440,1785843287,96,143,,02:00:00,1:54:07,-4.90%,0:10:03
+,20bd1c29-4758-4713-ae5a-dee0a19540b3,MLB Power Pros 2008,Success Mode Fielder,"{""Skitz"":""TCBSkitz""}",1785844180,1785845885,1785844260,1785845799,80,86,,00:20:00,0:25:39,28.25%,0:12:30
+,944409aa-f837-41d8-96a0-87aa44007e97,Peglin,Any% (No Act 4),"{""OckE"":""OckE93""}",1785846561,1785847799,1785846652,1785847680,91,119,,00:25:00,0:17:08,-31.47%,0:11:16
+,ec641bde-001f-41d8-950c-b218913369e2,Wario Land 3,Any%,"{""pr0te"":""ToreLehmann""}",1785848983,1785851929,1785849067,1785851729,84,200,,00:55:00,0:44:22,-19.33%,0:19:44
+,b631acce-50f6-49ed-8901-5ed75e734ce0,The Quest of Ki,Bad Ending (Warpless),"{""JkL0ser"":""JkL0ser""}",1785853218,1785854874,1785853272,1785854742,54,132,,00:27:00,0:24:30,-9.26%,0:21:29
+,b3e688e5-fb48-4ac0-87b7-1938184b8e72,Dreamworld Pogie,Any%,"{""AgentWyvern"":""AgentWyvern""}",1785856043,1785856547,1785856071,1785856479,28,68,,00:09:00,0:06:48,-24.44%,0:19:29
+,5283594b-6dbf-450c-a608-df6db16a659d,WALL-E,Any%,"{""Idk_maniac"":""idk_maniac""}",1785857403,1785863141,1785857485,1785863054,82,87,,01:45:00,1:32:49,-11.60%,0:14:16
+,56b92ab4-c5d9-492f-a3ae-648d78d8d833,WALL-E,Minigame%,"{""Idk_maniac"":""idk_maniac"",""hypnoshark"":""unknown""}",1785863459,1785864262,1785863573,1785864149,114,113,,00:10:00,0:09:36,-4.00%,0:05:18
+,2876fef7-281d-4ebe-8c75-e393a84fd312,South of Midnight,Any% (Restricted),"{""Kaspi"":""k_a_s_p_i""}",1785865015,1785869629,1785865081,1785869512,66,117,,01:20:00,1:13:51,-7.69%,0:12:33
+,c130af90-ec4f-4843-a510-c3802990cefa,Raldi's Crackhouse,Any%,"{""Xem92"":""Xem92""}",1785870419,1785875315,1785870669,1785875226,250,89,,01:30:00,1:15:57,-15.61%,0:13:10
+,be2b2774-d9db-49c1-8c83-74fd88dd03d4,Willow,Any%,"{""the_bagler"":""unknown""}",1785920483,1785924112,1785920548,1785924044,65,68,,01:10:00,0:58:16,-16.76%,
+,52bf94a5-ed87-4806-99ab-72a3b7d8203f,Bigfoot,All Courses,"{""JkL0ser"":""JkL0ser""}",1785924769,1785926766,1785924820,1785926655,51,111,,00:32:00,0:30:35,-4.43%,0:10:57
+,20a08586-e1fc-495a-9cb5-474f32be3367,Metal Gear MSX,1,"{""nintendnat"":""unknown""}",1785927290,1785929979,1785927345,1785929920,55,59,,01:00:00,0:42:55,-28.47%,0:08:44
+,6a890ca7-f323-4a0b-92ca-4ec26d9755a1,The Flintstones: The Rescue of Dino & Hoppy,Any%,"{""ScarfaceNico"":""ScarfaceNico""}",1785931645,1785932737,1785931713,1785932615,68,122,,00:20:00,0:15:02,-24.83%,0:27:46
+,874fdb42-f226-4769-bee7-58673638e2a4,Ninja Gaiden,Any%,"{""Zarc0nis"":""Zarc0nis""}",1785934136,1785935241,1785934303,1785935160,167,81,,00:20:00,0:14:17,-28.58%,0:23:19
+,09f63ac5-e273-4732-86ab-654694b40877,Hellforces,Any%,"{""suimachine"":""unknown""}",1785936322,1785938262,1785936401,1785938166,79,96,,00:31:00,0:29:25,-5.11%,0:18:01
+,9db7fccd-ac85-4e37-9d6a-cc4fec318e42,The Looker,Glitchless,"{""RipperRooTM"":""RipperRooTM""}",1785939199,1785939831,1785939295,1785939711,96,120,,00:10:00,0:06:56,-30.67%,0:15:37
+,c2c2fff3-ff5e-47f8-8a20-6a1d9554d159,Yu-Gi-Oh! 5D's Tag Force 4,Any% (Misty),"{""r4nd0mz__"":""r4nd0mz__________________""}",1785940665,1785943541,1785940709,1785943390,44,151,,00:55:00,0:44:41,-18.76%,0:13:54
+,66acfcdf-e42b-4a01-ab14-e20f0d6f9a5e,Stray,Any% Glitchless (2P1C) ,"{""TriadPanda"":""triad_panda"",""TriadCub"":""unknown""}",1785944385,1785949576,1785944437,1785949443,52,133,,01:35:00,1:23:26,-12.18%,0:14:04
+,3eb62a51-2880-48a9-b1ef-9341f6a294d7,Star Wars Jedi Knight: Jedi Academy,Tech Showcase,"{""MrLaay"":""MrLaay""}",1785951099,1785951794,1785951148,1785951783,49,11,,00:10:00,0:10:35,5.83%,0:25:23
+,3afc7c6d-04d0-4b7f-8e96-09ac7f07f9b4,Star Wars Jedi Knight: Jedi Academy,All Levels (No Stablaunch),"{""MrLaay"":""MrLaay""}",1785951950,1785954615,1785951974,1785954556,24,59,,00:32:00,0:43:02,34.48%,0:02:36
+,e7b92770-968c-4ed5-88c5-7f6017abf5cd,Infernax,Defeat Belphegor (Maxime Gunn),"{""JkL0ser"":""JkL0ser""}",1785955295,1785960123,1785955364,1785960075,69,48,,00:50:00,1:18:31,57.03%,0:11:20
+,47cfe631-fd8f-4a67-b097-0e129f74a49c,Super Dodge Ball,100% (Difficult),"{""Zarc0nis"":""Zarc0nis""}",1785960389,1785961311,1785960455,1785961194,66,117,,00:10:00,0:12:19,23.17%,0:04:26
+,1f2c7d20-8a31-433a-aa41-a6d4e2d01f40,Saltwater Sportfishing,Arcade Mode Any%,"{""zingochris"":""zingochris"",""superdave2"":""superdave2""}",1785961880,1785964188,1785961926,1785964023,46,165,,00:38:00,0:34:57,-8.03%,0:09:29
+,8be8b36e-5338-4b0d-a89c-a2a896dcdcab,Gran Turismo Concept: 2002 Tokyo-Geneva,1,"{""TeaKanji"":""TeaKanji""}",1786006841,1786012091,1786006888,1786012011,47,80,,01:20:00,1:25:23,6.73%,
+,b96f8011-6a1e-4dca-bd2a-cbf6d4e36889,Yohane the Parhelion -BLAZE in the DEEPBLUE-,All Upgrades,"{""LeahKazuno"":""LeahKazuno""}",1786012632,1786016036,1786012678,1786015921,46,115,,00:55:00,0:54:03,-1.73%,0:09:01
+,2d6d7e87-908c-408b-828d-fa65f32835b9,PlayStation Move Heroes,Metropolis,"{""ItzScaRee"":""unknown"",""Foas"":""unknown"",""bigCHICKENATOR"":""unknown"",""Frc"":""unknown"",""robo"":""unknown"",""ImEliTM"":""unknown"",""AbyssToaster"":""unknown"",""FineandDanD"":""unknown"",""kromers"":""unknown"",""KingEurope"":""unknown"",""mainly_maeve"":""unknown"",""Xem92"":""unknown"",""RipperRooTM"":""unknown"",""Skitz "":""unknown"",""TheTaraStark"":""unknown"",""Slysonic"":""Slysonic""}",1786017300,1786019931,1786017428,1786019757,128,174,,00:40:00,0:38:49,-2.96%,0:21:04
+,3c0bdb7b-54b5-418d-bd73-0a6978f4a4f5,Ratchet & Clank: Going Commando,Any% (Modded),"{""bigCHICKENATOR"":""bigCHICKENATOR""}",1786020217,1786024727,1786020255,1786024475,38,252,,01:00:00,1:10:20,17.22%,0:04:46
+,de39d294-0a87-45c7-ac1a-429b5c1693fe,Haven Call of the King,Showcase,"{""bigCHICKENATOR"":""bigCHICKENATOR""}",1786025414,1786026159,1786025472,1786026134,58,25,,00:15:00,0:11:02,-26.44%,0:11:27
+,f76f3751-2b5a-4b73-9014-ab9e3a876a72,Sonic Unleashed (Recompiled),Any%,"{""Broodlai"":""Broodlai""}",1786026667,1786033524,1786026778,1786033419,111,105,,02:00:00,1:50:41,-7.76%,0:08:28
+,e4106cfb-1cee-4e0a-b6d3-fe41ee66ce9f,Spider-Man: Friend or Foe,Any%,"{""Twisty"":""ABTwisty""}",1786034278,1786042808,1786034520,1786042759,242,49,,02:15:00,2:17:19,1.72%,0:12:34
+,794cabd5-cfb9-477b-9200-6fa616f20f98,Super Kiwi 64,50 Gems + Doomsday ,"{""Dralnah"":""dralnah""}",1786043688,1786045764,1786043735,1786045564,47,200,,00:30:00,0:30:29,1.61%,0:14:40
+,067cff55-8afc-4398-ba7a-1c699bc0239f,Balatro,Stake Climb,"{""Edenal"":""EdenalSDA""}",1786046569,1786055596,1786046695,1786055445,126,151,,01:35:00,2:25:50,53.51%,0:13:25
+,6c7f8c9a-8e0d-468c-9b0b-a13855812613,One Neck Ahead,Demo% (Blind),"{""Kirthar"":""Kirthar"",""mrock"":""mrockstar20""}",1786056432,1786059746,1786056594,1786059630,162,116,,00:45:00,0:50:36,12.44%,0:13:56
+,3892432f-4d9d-4696-a45e-015678fe01b4,Pokémon Platinum,"Any% (Glitchless, Manipless)","{""crafted"":""craftedite""}",1786094321,1786109092,1786094344,1786109039,23,53,,04:20:00,4:04:55,-5.80%,
+,4cb12a7e-08e4-4bfd-8899-6042c0c59610,SaGa Frontier,T260G's Story (Japanese),"{""desa"":""unknown""}",1786109911,1786113978,1786109975,1786113829,64,149,,01:10:00,1:04:14,-8.24%,0:13:39
+,7097e946-1657-430b-bb12-cdf808eae143,Styx: Shards of Darkness,Any% (Co-Op),"{""MrWalrus"":""MrWalrus3451"",""Cropax"":""Cropax""}",1786114483,1786117822,1786114533,1786117722,50,100,,00:50:00,0:53:09,6.30%,0:08:25
+,4097cc65-1086-468f-af48-9f3688f2a183,TimeSplitters Rewind,Any% Challenges,"{""Atreides"":""atreides_lol""}",1786118484,1786122505,1786118579,1786121775,95,730,,01:10:00,0:53:16,-23.90%,0:11:02
+,40ebebba-b059-431c-9aa4-6671a74d0f7f,Dr. Mario,0-20,"{""EvryTimeWeSlay"":""EvryTimeWeSlay""}",1786124338,1786127086,1786124439,1786126959,101,127,,00:45:00,0:42:00,-6.67%,0:30:33
+,427ca810-0829-4ebd-861e-129747e8b288,Colobot,NG+ (Main Campaign),"{""Ananace"":""Ananace""}",1786127530,1786128426,1786127666,1786128262,136,164,,00:15:00,0:09:56,-33.78%,0:07:24
+,a82b8cdc-cbf6-4506-9fe0-4358161141a3,Chuck Rock,Any%,"{""ApolloSmug"":""ApolloSmug""}",1786129087,1786130359,1786129174,1786130264,87,95,,00:15:00,0:18:10,21.11%,0:11:01
+,997f62d2-050c-42b1-b798-1c5972d47fc1,The Little Mermaid,Any%,"{""lucha_gym_2"":""unknown"",""hirexen"":""hirexen""}",1786131412,1786132178,1786131539,1786132006,127,172,,00:11:00,0:07:47,-29.24%,0:17:33
+,b3488f21-a9eb-4261-a8dc-abeb34b0ea61,Ikari III: The Rescue,Co-Op Race (Blind Partners),"{""lucha_gym_2"":""unknown"",""JkL0ser"":""JkL0ser""}",1786132874,1786134378,1786133119,1786134222,245,156,,00:25:00,0:18:23,-26.47%,0:11:36
+,aa116cea-5066-4c51-8b9e-9b824e946261,Sewer Rave,8-Player Tournament,"{""lurven"":""lurven_"",""MrLaay"":""MrLaay""}",1786136395,1786140632,1786136521,1786140337,126,295,,01:20:00,1:03:36,-20.50%,0:33:37

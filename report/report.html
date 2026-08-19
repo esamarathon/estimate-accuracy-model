@@ -1,0 +1,257 @@
+<title>ESA Estimate Accuracy — Real Times vs Submissions</title>
+<style>
+  :root {
+    --surface: #fcfcfb; --card: #ffffff; --ink: #0b0b0b; --ink-2: #52514e; --muted: #8a887f;
+    --line: #e7e5e0; --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a;
+    --s1-soft: #9ec5f4; --grid: #efedea; --ref: #b6b3aa;
+    --good: #0ca30c; --warn: #fab219; --crit: #d03b3b;
+  }
+  @media (prefers-color-scheme: dark) { :root {
+    --surface: #1a1a19; --card: #232322; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #8f8d83;
+    --line: #383835; --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+    --s1-soft: #2a5787; --grid: #2c2c2a; --ref: #5d5b54;
+  } }
+  :root[data-theme="dark"] {
+    --surface: #1a1a19; --card: #232322; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #8f8d83;
+    --line: #383835; --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+    --s1-soft: #2a5787; --grid: #2c2c2a; --ref: #5d5b54;
+  }
+  :root[data-theme="light"] {
+    --surface: #fcfcfb; --card: #ffffff; --ink: #0b0b0b; --ink-2: #52514e; --muted: #8a887f;
+    --line: #e7e5e0; --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a;
+    --s1-soft: #9ec5f4; --grid: #efedea; --ref: #b6b3aa;
+  }
+  body { background: var(--surface); color: var(--ink); font: 15px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 2.2rem 1.1rem 5rem; }
+  main { max-width: 980px; margin: 0 auto; }
+  h1 { font-size: 1.7rem; margin: .3rem 0 .4rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.15rem; margin: 2.6rem 0 .6rem; }
+  .eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--s1); }
+  .meta { color: var(--muted); font-size: .85rem; }
+  p { max-width: 72ch; }
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .8rem; margin: 1.4rem 0; }
+  .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1rem; }
+  .kpi .v { font-size: 1.7rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .kpi .l { font-size: .78rem; color: var(--ink-2); line-height: 1.35; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.1rem 1.2rem; margin: 1rem 0; }
+  .card h3 { margin: 0 0 .1rem; font-size: .95rem; }
+  .sub { color: var(--muted); font-size: .8rem; margin: 0 0 .6rem; }
+  .legend { display: flex; gap: 1rem; font-size: .78rem; color: var(--ink-2); margin: .3rem 0 .2rem; flex-wrap: wrap; }
+  .legend span { display: inline-flex; align-items: center; gap: .35rem; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  svg { width: 100%; height: auto; display: block; }
+  .tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--surface); font-size: .75rem; padding: .3rem .55rem; border-radius: 6px; opacity: 0; transition: opacity .08s; z-index: 10; max-width: 280px; }
+  table { border-collapse: collapse; font-size: .82rem; width: 100%; }
+  th, td { text-align: right; padding: .3rem .6rem; border-top: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { border-top: none; font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .algo { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--s1); border-radius: 10px; padding: 1rem 1.2rem; }
+  .algo code, pre code { font: .82rem/1.6 ui-monospace, "SF Mono", Menlo, monospace; }
+  pre { background: color-mix(in oklab, var(--card) 70%, var(--surface)); border: 1px solid var(--line); border-radius: 8px; padding: .8rem 1rem; overflow-x: auto; }
+  details { margin: 1rem 0; } summary { cursor: pointer; font-size: .85rem; color: var(--ink-2); }
+  .flat-note { color: var(--muted); font-size: .8rem; }
+  ul { max-width: 74ch; }
+</style>
+<main>
+  <div class="eyebrow">ESA · Schedule Research</div>
+  <h1>What runs actually take: estimates vs reality</h1>
+  <p class="meta">379 runs with measured slot times across ESA Summer 2022, ESA Summer 2025 and ESA Winter 2026 · timing sheets (231 runs: timer + intro/outro + setup) + frame-exact VOD cuts (validated ±2s against the sheets) · Oengus submissions 2024–2026 for estimate provenance.</p>
+
+  <div class="kpis">
+    <div class="kpi"><div class="v">−2:25</div><div class="l">median run vs estimate — runners finish <b>under</b>, not over</div></div>
+    <div class="kpi"><div class="v">53%</div><div class="l">of slots (speech + run) still exceed the estimate</div></div>
+    <div class="kpi"><div class="v">+2:34</div><div class="l">median intro + outro speech — flat, never in the estimate</div></div>
+    <div class="kpi"><div class="v">60%</div><div class="l">of setups blow the 10-minute default (p80 = 17:09)</div></div>
+    <div class="kpi"><div class="v">+5 min</div><div class="l">p80 slot overrun — near-constant across every run length under 2h</div></div>
+  </div>
+
+  <h2>1 · Estimate vs actual slot, run by run</h2>
+  <div class="card">
+    <h3>Actual slot time vs submitted estimate</h3>
+    <p class="sub">Log-log · the gray line is "estimate was exactly right" · slot = intro speech + run + outro speech</p>
+    <div class="legend"><span><i class="dot" style="background:var(--s1)"></i>ESA Winter 2026</span><span><i class="dot" style="background:var(--s2)"></i>ESA Summer 2025</span><span><i class="dot" style="background:var(--s3)"></i>ESA Summer 2022</span></div>
+    <svg id="scatter" viewBox="0 0 900 480" role="img" aria-label="Scatter of estimate versus actual slot time"></svg>
+  </div>
+
+  <h2>2 · Where the time goes</h2>
+  <div class="card">
+    <h3>Slot minus estimate — the whole distribution</h3>
+    <p class="sub">2-minute bins, clipped at ±30 · blue = finished under the estimate, orange = ran over</p>
+    <svg id="hist" viewBox="0 0 900 300" role="img" aria-label="Histogram of slot minus estimate in minutes"></svg>
+  </div>
+  <div class="card">
+    <h3>Overrun by estimate length — p50 → p80</h3>
+    <p class="sub">Each row: median slot overrun (dark) stretching to the 80th percentile (light). The p80 is a near-constant +3–5 min for everything under two hours — the overhead is <b>additive</b>, not proportional.</p>
+    <svg id="dumb" viewBox="0 0 900 260" role="img" aria-label="Dumbbell chart of median to p80 overrun by estimate bucket"></svg>
+  </div>
+  <div class="card">
+    <h3>Setup time vs the 10-minute default</h3>
+    <p class="sub">231 timed setups (W26 + S22) · the dashed line is what the schedule books today; the excess summed to <b>+10.2 hours</b> across these two events</p>
+    <svg id="setup" viewBox="0 0 900 280" role="img" aria-label="Histogram of setup minutes with ten minute reference"></svg>
+  </div>
+
+  <h2>3 · What the data says</h2>
+  <ul>
+    <li><b>Estimates are honest — trust them.</b> The median run finishes 2:25 <i>under</i> its estimate; only a third run over at all. The submitted estimate is the best single predictor of run time we have. Estimates have tightened over the years (S22 median ratio 0.938 → W26 0.982), so the old sandbag buffer is eroding.</li>
+    <li><b>The speeches are the systematic error.</b> Intro + outro add a median 2:34 (p80 3:54) to every slot, independent of run length. That flat tax flips the picture: 53% of slots exceed the estimate even though most runs don't.</li>
+    <li><b>The tail is asymmetric.</b> A blown no-reset run loses 10–19 minutes (p95); a great run saves only a few. Short runs (&lt;20m) carry the worst <i>relative</i> risk (p80 ratio 1.27); &gt;2h runs the worst <i>absolute</i> risk (p80 +9m).</li>
+    <li><b>Setup, not estimates, drains the schedule.</b> 60% of setups exceed the booked 10 minutes (median 11:26, p80 17:09) — +10.2h of unbooked time across two events, an order of magnitude more than net estimate drift.</li>
+    <li><b>Runner history is a dead end.</b> 24 runners ran in both W26 and S25; the correlation of their over/under ratio between events is −0.12. Per-runner bias is noise — don't build that feature.</li>
+    <li><b>Days self-balance — mostly.</b> Whole-event drift was −1.2h (S22), −0.0h (S25), +2.4h (W26): long-run padding roughly cancels the speech tax at day scale. W26's +2.4h shows the marge is gone as estimates tighten.</li>
+  </ul>
+
+  <h2>4 · The predictor</h2>
+  <div class="algo">
+    <p style="margin-top:0"><b>Predicted slot</b> (what a run actually occupies between setups), from the submitted estimate:</p>
+<pre><code>speech      = 2:30                        # median; use 4:00 for p80 planning
+run_p50     = estimate × r50(bucket)      # see table — ≈ estimate
+slot_p50    = run_p50 + speech            # honest booking
+slot_p80    = estimate + 5 min            # &lt;2h runs — flat!
+            = estimate + 9 min            # &gt;2h runs
+setup_p50   = 11:30                       # book 15:00, not 10:00
+flag_risk   = estimate &lt; 20 min           # worst relative spread (p80 ×1.27)
+            ∨ estimate &gt; 2 h              # worst absolute tail (+9m)</code></pre>
+    <table>
+      <thead><tr><th>estimate bucket</th><th>n</th><th>r50 (slot/est)</th><th>r80</th><th>Δ p50</th><th>Δ p80</th></tr></thead>
+      <tbody id="modeltable"></tbody>
+    </table>
+    <p class="flat-note">Fitted on the 379 unified slot rows; the r-table and the flat "+5 min" rule agree — use whichever is easier to implement. A day scheduled at slot_p50 per run + 15-minute setups reproduces the historical day totals within ±1%.</p>
+  </div>
+
+  <h2>5 · Method &amp; caveats</h2>
+  <ul>
+    <li><b>Truth sources.</b> ESA run-timing sheets for W26 + S22 (timer start/stop, intro/outro seconds, setup); YouTube VOD cut durations for S25 and W26. On the 94 W26 runs covered by both, VOD length equals sheet slot time with median 0s error (p10 −2s, p90 +1s) — the cuts are frame-exact slot captures, so S25's VOD numbers are used as real slot times.</li>
+    <li><b>Archived Horaro is NOT ground truth:</b> 92–94% of its "final" lengths still equal the submitted estimate — ESA amends start-time drift live, not per-run lengths. Any analysis regressed on it would conclude estimates are near-perfect.</li>
+    <li><b>Matching.</b> Oengus estimates joined to schedule rows by normalized game + category + runner (87% S25, 77% W26 match rate); the timing sheets carry their own estimate column, used directly. Showcase/speech rows excluded.</li>
+    <li><b>Speech times for S25</b> are inside its slot numbers but not separable (no sheet); the split relies on W26 + S22.</li>
+    <li><b>Survivorship:</b> only runs that made the schedule are observable — this predicts scheduled-run behavior, which is exactly the scheduling use case.</li>
+  </ul>
+
+  <details><summary>Data table — all 379 runs (game · event · estimate · actual slot · Δ)</summary>
+    <div style="max-height: 420px; overflow: auto; margin-top: .6rem"><table><thead><tr><th>Event</th><th>Estimate</th><th>Slot</th><th>Δ min</th></tr></thead><tbody id="datatable"></tbody></table></div>
+  </details>
+</main>
+<div class="tip" id="tip"></div>
+<script>
+const DATA = {"scatter":[{"e":4800,"s":4396,"ev":"ESA Winter 2026"},{"e":6000,"s":7097,"ev":"ESA Winter 2026"},{"e":780,"s":856,"ev":"ESA Winter 2026"},{"e":780,"s":848,"ev":"ESA Winter 2026"},{"e":14400,"s":14238,"ev":"ESA Winter 2026"},{"e":8700,"s":7894,"ev":"ESA Winter 2026"},{"e":9000,"s":8673,"ev":"ESA Winter 2026"},{"e":5700,"s":5268,"ev":"ESA Winter 2026"},{"e":4800,"s":4291,"ev":"ESA Winter 2026"},{"e":5700,"s":5701,"ev":"ESA Winter 2026"},{"e":4680,"s":4976,"ev":"ESA Winter 2026"},{"e":1980,"s":2232,"ev":"ESA Winter 2026"},{"e":4500,"s":5987,"ev":"ESA Winter 2026"},{"e":1500,"s":1771,"ev":"ESA Winter 2026"},{"e":7200,"s":7757,"ev":"ESA Winter 2026"},{"e":3300,"s":3705,"ev":"ESA Winter 2026"},{"e":3300,"s":3187,"ev":"ESA Winter 2026"},{"e":900,"s":1450,"ev":"ESA Winter 2026"},{"e":10800,"s":10008,"ev":"ESA Winter 2026"},{"e":18900,"s":19129,"ev":"ESA Winter 2026"},{"e":2340,"s":3062,"ev":"ESA Winter 2026"},{"e":2700,"s":2096,"ev":"ESA Winter 2026"},{"e":6000,"s":5883,"ev":"ESA Winter 2026"},{"e":3480,"s":3704,"ev":"ESA Winter 2026"},{"e":6900,"s":6248,"ev":"ESA Winter 2026"},{"e":8400,"s":7910,"ev":"ESA Winter 2026"},{"e":4200,"s":3986,"ev":"ESA Winter 2026"},{"e":5400,"s":5094,"ev":"ESA Winter 2026"},{"e":1200,"s":1310,"ev":"ESA Winter 2026"},{"e":2400,"s":2262,"ev":"ESA Winter 2026"},{"e":2700,"s":2689,"ev":"ESA Winter 2026"},{"e":21000,"s":22502,"ev":"ESA Winter 2026"},{"e":10800,"s":10980,"ev":"ESA Winter 2026"},{"e":7800,"s":8010,"ev":"ESA Winter 2026"},{"e":3600,"s":2949,"ev":"ESA Winter 2026"},{"e":1680,"s":1940,"ev":"ESA Winter 2026"},{"e":3600,"s":4417,"ev":"ESA Winter 2026"},{"e":5400,"s":5723,"ev":"ESA Winter 2026"},{"e":3300,"s":3185,"ev":"ESA Winter 2026"},{"e":3900,"s":4097,"ev":"ESA Winter 2026"},{"e":2700,"s":2649,"ev":"ESA Winter 2026"},{"e":9000,"s":8774,"ev":"ESA Winter 2026"},{"e":1080,"s":1325,"ev":"ESA Winter 2026"},{"e":21600,"s":18980,"ev":"ESA Winter 2026"},{"e":11100,"s":10809,"ev":"ESA Winter 2026"},{"e":1800,"s":2066,"ev":"ESA Winter 2026"},{"e":2700,"s":3570,"ev":"ESA Winter 2026"},{"e":14400,"s":15122,"ev":"ESA Winter 2026"},{"e":3600,"s":3812,"ev":"ESA Winter 2026"},{"e":4200,"s":3886,"ev":"ESA Winter 2026"},{"e":8400,"s":8341,"ev":"ESA Winter 2026"},{"e":5400,"s":5524,"ev":"ESA Winter 2026"},{"e":3600,"s":3056,"ev":"ESA Winter 2026"},{"e":6300,"s":6193,"ev":"ESA Winter 2026"},{"e":3000,"s":3786,"ev":"ESA Winter 2026"},{"e":6300,"s":7426,"ev":"ESA Winter 2026"},{"e":11700,"s":11688,"ev":"ESA Winter 2026"},{"e":2040,"s":2276,"ev":"ESA Winter 2026"},{"e":3300,"s":4290,"ev":"ESA Winter 2026"},{"e":1800,"s":1775,"ev":"ESA Winter 2026"},{"e":2400,"s":2049,"ev":"ESA Winter 2026"},{"e":1200,"s":1072,"ev":"ESA Winter 2026"},{"e":9000,"s":9310,"ev":"ESA Winter 2026"},{"e":2100,"s":2002,"ev":"ESA Winter 2026"},{"e":1980,"s":2306,"ev":"ESA Winter 2026"},{"e":1800,"s":1915,"ev":"ESA Winter 2026"},{"e":6120,"s":5835,"ev":"ESA Winter 2026"},{"e":3600,"s":3562,"ev":"ESA Winter 2026"},{"e":5880,"s":5862,"ev":"ESA Winter 2026"},{"e":6300,"s":5838,"ev":"ESA Winter 2026"},{"e":4500,"s":5112,"ev":"ESA Winter 2026"},{"e":1200,"s":1586,"ev":"ESA Winter 2026"},{"e":13800,"s":13139,"ev":"ESA Winter 2026"},{"e":1200,"s":1041,"ev":"ESA Winter 2026"},{"e":13200,"s":13627,"ev":"ESA Winter 2026"},{"e":1920,"s":2940,"ev":"ESA Winter 2026"},{"e":1800,"s":1599,"ev":"ESA Winter 2026"},{"e":2100,"s":2243,"ev":"ESA Winter 2026"},{"e":1200,"s":1260,"ev":"ESA Winter 2026"},{"e":2700,"s":2545,"ev":"ESA Winter 2026"},{"e":2100,"s":1887,"ev":"ESA Winter 2026"},{"e":7200,"s":5562,"ev":"ESA Winter 2026"},{"e":2400,"s":2659,"ev":"ESA Winter 2026"},{"e":10800,"s":11515,"ev":"ESA Winter 2026"},{"e":1500,"s":1281,"ev":"ESA Winter 2026"},{"e":7500,"s":9166,"ev":"ESA Winter 2026"},{"e":13800,"s":14702,"ev":"ESA Winter 2026"},{"e":1200,"s":1300,"ev":"ESA Winter 2026"},{"e":3600,"s":3896,"ev":"ESA Winter 2026"},{"e":4800,"s":4696,"ev":"ESA Winter 2026"},{"e":1080,"s":1154,"ev":"ESA Winter 2026"},{"e":300,"s":465,"ev":"ESA Winter 2026"},{"e":1320,"s":1699,"ev":"ESA Winter 2026"},{"e":9900,"s":9991,"ev":"ESA Winter 2026"},{"e":3600,"s":3735,"ev":"ESA Winter 2026"},{"e":2520,"s":2390,"ev":"ESA Winter 2026"},{"e":3600,"s":3732,"ev":"ESA Winter 2026"},{"e":10200,"s":10599,"ev":"ESA Winter 2026"},{"e":6300,"s":6911,"ev":"ESA Winter 2026"},{"e":2700,"s":3038,"ev":"ESA Summer 2022"},{"e":3300,"s":3000,"ev":"ESA Summer 2022"},{"e":5400,"s":4845,"ev":"ESA Summer 2022"},{"e":3000,"s":3041,"ev":"ESA Summer 2022"},{"e":2100,"s":2934,"ev":"ESA Summer 2022"},{"e":1500,"s":1309,"ev":"ESA Summer 2022"},{"e":1500,"s":1475,"ev":"ESA Summer 2022"},{"e":3000,"s":3055,"ev":"ESA Summer 2022"},{"e":2160,"s":2012,"ev":"ESA Summer 2022"},{"e":4200,"s":3633,"ev":"ESA Summer 2022"},{"e":5700,"s":5325,"ev":"ESA Summer 2022"},{"e":5400,"s":5064,"ev":"ESA Summer 2022"},{"e":10500,"s":10819,"ev":"ESA Summer 2022"},{"e":6720,"s":6889,"ev":"ESA Summer 2022"},{"e":3900,"s":3561,"ev":"ESA Summer 2022"},{"e":4800,"s":4581,"ev":"ESA Summer 2022"},{"e":7800,"s":8394,"ev":"ESA Summer 2022"},{"e":2700,"s":2258,"ev":"ESA Summer 2022"},{"e":1620,"s":1747,"ev":"ESA Summer 2022"},{"e":2160,"s":2217,"ev":"ESA Summer 2022"},{"e":1200,"s":1091,"ev":"ESA Summer 2022"},{"e":3600,"s":3265,"ev":"ESA Summer 2022"},{"e":9000,"s":9275,"ev":"ESA Summer 2022"},{"e":3000,"s":3301,"ev":"ESA Summer 2022"},{"e":1800,"s":1800,"ev":"ESA Summer 2022"},{"e":6900,"s":6829,"ev":"ESA Summer 2022"},{"e":8100,"s":6531,"ev":"ESA Summer 2022"},{"e":6000,"s":5980,"ev":"ESA Summer 2022"},{"e":4500,"s":4017,"ev":"ESA Summer 2022"},{"e":5100,"s":4619,"ev":"ESA Summer 2022"},{"e":2700,"s":2311,"ev":"ESA Summer 2022"},{"e":5100,"s":5527,"ev":"ESA Summer 2022"},{"e":5400,"s":5583,"ev":"ESA Summer 2022"},{"e":2520,"s":2652,"ev":"ESA Summer 2022"},{"e":2400,"s":2498,"ev":"ESA Summer 2022"},{"e":2400,"s":2575,"ev":"ESA Summer 2022"},{"e":7200,"s":7419,"ev":"ESA Summer 2022"},{"e":1800,"s":1738,"ev":"ESA Summer 2022"},{"e":1800,"s":2352,"ev":"ESA Summer 2022"},{"e":660,"s":868,"ev":"ESA Summer 2022"},{"e":780,"s":826,"ev":"ESA Summer 2022"},{"e":720,"s":532,"ev":"ESA Summer 2022"},{"e":780,"s":650,"ev":"ESA Summer 2022"},{"e":480,"s":500,"ev":"ESA Summer 2022"},{"e":1500,"s":1479,"ev":"ESA Summer 2022"},{"e":3000,"s":2209,"ev":"ESA Summer 2022"},{"e":1800,"s":2106,"ev":"ESA Summer 2022"},{"e":1500,"s":1576,"ev":"ESA Summer 2022"},{"e":960,"s":735,"ev":"ESA Summer 2022"},{"e":900,"s":639,"ev":"ESA Summer 2022"},{"e":1800,"s":1688,"ev":"ESA Summer 2022"},{"e":4080,"s":3880,"ev":"ESA Summer 2022"},{"e":5400,"s":5534,"ev":"ESA Summer 2022"},{"e":3600,"s":3330,"ev":"ESA Summer 2022"},{"e":3000,"s":3094,"ev":"ESA Summer 2022"},{"e":2400,"s":2535,"ev":"ESA Summer 2022"},{"e":10200,"s":10336,"ev":"ESA Summer 2022"},{"e":6900,"s":6856,"ev":"ESA Summer 2022"},{"e":14400,"s":14857,"ev":"ESA Summer 2022"},{"e":4500,"s":4679,"ev":"ESA Summer 2022"},{"e":600,"s":863,"ev":"ESA Summer 2022"},{"e":2400,"s":2800,"ev":"ESA Summer 2022"},{"e":4500,"s":4172,"ev":"ESA Summer 2022"},{"e":3600,"s":3517,"ev":"ESA Summer 2022"},{"e":7200,"s":8004,"ev":"ESA Summer 2022"},{"e":2700,"s":3367,"ev":"ESA Summer 2022"},{"e":1800,"s":2587,"ev":"ESA Summer 2022"},{"e":1500,"s":1441,"ev":"ESA Summer 2022"},{"e":1200,"s":1397,"ev":"ESA Summer 2022"},{"e":1500,"s":2098,"ev":"ESA Summer 2022"},{"e":4800,"s":5577,"ev":"ESA Summer 2022"},{"e":5100,"s":4670,"ev":"ESA Summer 2022"},{"e":17400,"s":17064,"ev":"ESA Summer 2022"},{"e":7500,"s":7850,"ev":"ESA Summer 2022"},{"e":900,"s":524,"ev":"ESA Summer 2022"},{"e":25200,"s":22265,"ev":"ESA Summer 2022"},{"e":6300,"s":7068,"ev":"ESA Summer 2022"},{"e":1500,"s":1639,"ev":"ESA Summer 2022"},{"e":2820,"s":2592,"ev":"ESA Summer 2022"},{"e":5520,"s":5335,"ev":"ESA Summer 2022"},{"e":5100,"s":4588,"ev":"ESA Summer 2022"},{"e":10500,"s":10597,"ev":"ESA Summer 2022"},{"e":11400,"s":10977,"ev":"ESA Summer 2022"},{"e":5100,"s":4980,"ev":"ESA Summer 2022"},{"e":21900,"s":22674,"ev":"ESA Summer 2022"},{"e":9000,"s":9140,"ev":"ESA Summer 2022"},{"e":1800,"s":2038,"ev":"ESA Summer 2022"},{"e":1740,"s":1674,"ev":"ESA Summer 2022"},{"e":1500,"s":1306,"ev":"ESA Summer 2022"},{"e":2400,"s":2727,"ev":"ESA Summer 2022"},{"e":3000,"s":3150,"ev":"ESA Summer 2022"},{"e":4800,"s":4608,"ev":"ESA Summer 2022"},{"e":900,"s":875,"ev":"ESA Summer 2022"},{"e":1800,"s":2376,"ev":"ESA Summer 2022"},{"e":1500,"s":1610,"ev":"ESA Summer 2022"},{"e":1200,"s":1054,"ev":"ESA Summer 2022"},{"e":600,"s":716,"ev":"ESA Summer 2022"},{"e":2400,"s":2485,"ev":"ESA Summer 2022"},{"e":1500,"s":1346,"ev":"ESA Summer 2022"},{"e":9600,"s":9006,"ev":"ESA Summer 2022"},{"e":3600,"s":3169,"ev":"ESA Summer 2022"},{"e":5400,"s":5677,"ev":"ESA Summer 2022"},{"e":2100,"s":1713,"ev":"ESA Summer 2022"},{"e":900,"s":569,"ev":"ESA Summer 2022"},{"e":2100,"s":1528,"ev":"ESA Summer 2022"},{"e":3000,"s":3180,"ev":"ESA Summer 2022"},{"e":1020,"s":995,"ev":"ESA Summer 2022"},{"e":3600,"s":3637,"ev":"ESA Summer 2022"},{"e":900,"s":963,"ev":"ESA Summer 2022"},{"e":2100,"s":2122,"ev":"ESA Summer 2022"},{"e":15600,"s":15024,"ev":"ESA Summer 2022"},{"e":9000,"s":9561,"ev":"ESA Summer 2022"},{"e":1020,"s":1065,"ev":"ESA Summer 2022"},{"e":5400,"s":4996,"ev":"ESA Summer 2022"},{"e":3300,"s":3058,"ev":"ESA Summer 2022"},{"e":4500,"s":4304,"ev":"ESA Summer 2022"},{"e":2700,"s":2224,"ev":"ESA Summer 2022"},{"e":5400,"s":5316,"ev":"ESA Summer 2022"},{"e":7500,"s":6548,"ev":"ESA Summer 2022"},{"e":600,"s":518,"ev":"ESA Summer 2022"},{"e":3600,"s":3665,"ev":"ESA Summer 2022"},{"e":1800,"s":1980,"ev":"ESA Summer 2022"},{"e":900,"s":1139,"ev":"ESA Summer 2022"},{"e":1740,"s":1882,"ev":"ESA Summer 2022"},{"e":3600,"s":3563,"ev":"ESA Summer 2022"},{"e":2400,"s":2635,"ev":"ESA Summer 2022"},{"e":2400,"s":2777,"ev":"ESA Summer 2022"},{"e":7200,"s":6866,"ev":"ESA Summer 2022"},{"e":3600,"s":3406,"ev":"ESA Summer 2022"},{"e":3000,"s":2827,"ev":"ESA Summer 2022"},{"e":3720,"s":3975,"ev":"ESA Summer 2022"},{"e":9000,"s":9069,"ev":"ESA Summer 2022"},{"e":3000,"s":2082,"ev":"ESA Summer 2025"},{"e":2400,"s":2548,"ev":"ESA Summer 2025"},{"e":5100,"s":4834,"ev":"ESA Summer 2025"},{"e":1200,"s":1304,"ev":"ESA Summer 2025"},{"e":4620,"s":4046,"ev":"ESA Summer 2025"},{"e":2100,"s":2132,"ev":"ESA Summer 2025"},{"e":6600,"s":7210,"ev":"ESA Summer 2025"},{"e":7200,"s":7298,"ev":"ESA Summer 2025"},{"e":8100,"s":7148,"ev":"ESA Summer 2025"},{"e":5700,"s":5570,"ev":"ESA Summer 2025"},{"e":4800,"s":5966,"ev":"ESA Summer 2025"},{"e":1200,"s":1080,"ev":"ESA Summer 2025"},{"e":1080,"s":1018,"ev":"ESA Summer 2025"},{"e":1260,"s":1214,"ev":"ESA Summer 2025"},{"e":1200,"s":1042,"ev":"ESA Summer 2025"},{"e":2100,"s":1790,"ev":"ESA Summer 2025"},{"e":1020,"s":1256,"ev":"ESA Summer 2025"},{"e":1800,"s":2044,"ev":"ESA Summer 2025"},{"e":7320,"s":7184,"ev":"ESA Summer 2025"},{"e":1860,"s":2579,"ev":"ESA Summer 2025"},{"e":2400,"s":2388,"ev":"ESA Summer 2025"},{"e":2820,"s":3327,"ev":"ESA Summer 2025"},{"e":8400,"s":7242,"ev":"ESA Summer 2025"},{"e":3300,"s":3576,"ev":"ESA Summer 2025"},{"e":7200,"s":1724,"ev":"ESA Summer 2025"},{"e":7200,"s":6630,"ev":"ESA Summer 2025"},{"e":720,"s":796,"ev":"ESA Summer 2025"},{"e":9900,"s":9678,"ev":"ESA Summer 2025"},{"e":5400,"s":5553,"ev":"ESA Summer 2025"},{"e":4800,"s":4562,"ev":"ESA Summer 2025"},{"e":5100,"s":5254,"ev":"ESA Summer 2025"},{"e":19800,"s":22173,"ev":"ESA Summer 2025"},{"e":10800,"s":11123,"ev":"ESA Summer 2025"},{"e":19800,"s":20700,"ev":"ESA Summer 2025"},{"e":6300,"s":6402,"ev":"ESA Summer 2025"},{"e":2400,"s":2264,"ev":"ESA Summer 2025"},{"e":3300,"s":2802,"ev":"ESA Summer 2025"},{"e":3600,"s":3882,"ev":"ESA Summer 2025"},{"e":10800,"s":9436,"ev":"ESA Summer 2025"},{"e":3720,"s":3862,"ev":"ESA Summer 2025"},{"e":2700,"s":2614,"ev":"ESA Summer 2025"},{"e":6120,"s":6448,"ev":"ESA Summer 2025"},{"e":540,"s":688,"ev":"ESA Summer 2025"},{"e":5100,"s":5236,"ev":"ESA Summer 2025"},{"e":1800,"s":1474,"ev":"ESA Summer 2025"},{"e":3420,"s":3496,"ev":"ESA Summer 2025"},{"e":3900,"s":5126,"ev":"ESA Summer 2025"},{"e":4200,"s":3632,"ev":"ESA Summer 2025"},{"e":4200,"s":3890,"ev":"ESA Summer 2025"},{"e":4200,"s":4006,"ev":"ESA Summer 2025"},{"e":5400,"s":5318,"ev":"ESA Summer 2025"},{"e":2100,"s":2498,"ev":"ESA Summer 2025"},{"e":2160,"s":2132,"ev":"ESA Summer 2025"},{"e":900,"s":725,"ev":"ESA Summer 2025"},{"e":1200,"s":1598,"ev":"ESA Summer 2025"},{"e":7200,"s":6452,"ev":"ESA Summer 2025"},{"e":3000,"s":3010,"ev":"ESA Summer 2025"},{"e":8400,"s":9408,"ev":"ESA Summer 2025"},{"e":3000,"s":2723,"ev":"ESA Summer 2025"},{"e":8700,"s":8481,"ev":"ESA Summer 2025"},{"e":7200,"s":7106,"ev":"ESA Summer 2025"},{"e":2400,"s":2162,"ev":"ESA Summer 2025"},{"e":2100,"s":2306,"ev":"ESA Summer 2025"},{"e":11700,"s":11190,"ev":"ESA Summer 2025"},{"e":4500,"s":3941,"ev":"ESA Summer 2025"},{"e":1500,"s":1538,"ev":"ESA Summer 2025"},{"e":1080,"s":1380,"ev":"ESA Summer 2025"},{"e":2100,"s":1891,"ev":"ESA Summer 2025"},{"e":4200,"s":3606,"ev":"ESA Summer 2025"},{"e":1080,"s":1050,"ev":"ESA Summer 2025"},{"e":2520,"s":2884,"ev":"ESA Summer 2025"},{"e":1800,"s":1822,"ev":"ESA Summer 2025"},{"e":2040,"s":2122,"ev":"ESA Summer 2025"},{"e":1560,"s":1704,"ev":"ESA Summer 2025"},{"e":5700,"s":5654,"ev":"ESA Summer 2025"},{"e":4800,"s":4818,"ev":"ESA Summer 2025"},{"e":18900,"s":18570,"ev":"ESA Summer 2025"},{"e":3000,"s":2708,"ev":"ESA Summer 2025"},{"e":3600,"s":3854,"ev":"ESA Summer 2025"},{"e":9300,"s":9524,"ev":"ESA Summer 2025"},{"e":11400,"s":11588,"ev":"ESA Summer 2025"},{"e":900,"s":884,"ev":"ESA Summer 2025"},{"e":600,"s":682,"ev":"ESA Summer 2025"},{"e":1500,"s":1540,"ev":"ESA Summer 2025"},{"e":2220,"s":2109,"ev":"ESA Summer 2025"},{"e":1200,"s":1228,"ev":"ESA Summer 2025"},{"e":1080,"s":1047,"ev":"ESA Summer 2025"},{"e":900,"s":678,"ev":"ESA Summer 2025"},{"e":1380,"s":1576,"ev":"ESA Summer 2025"},{"e":1800,"s":1842,"ev":"ESA Summer 2025"},{"e":1080,"s":1250,"ev":"ESA Summer 2025"},{"e":720,"s":928,"ev":"ESA Summer 2025"},{"e":1200,"s":1284,"ev":"ESA Summer 2025"},{"e":900,"s":812,"ev":"ESA Summer 2025"},{"e":600,"s":886,"ev":"ESA Summer 2025"},{"e":660,"s":652,"ev":"ESA Summer 2025"},{"e":600,"s":608,"ev":"ESA Summer 2025"},{"e":3600,"s":4490,"ev":"ESA Summer 2025"},{"e":1200,"s":1628,"ev":"ESA Summer 2025"},{"e":5700,"s":5441,"ev":"ESA Summer 2025"},{"e":1500,"s":1586,"ev":"ESA Summer 2025"},{"e":6120,"s":6130,"ev":"ESA Summer 2025"},{"e":6900,"s":6485,"ev":"ESA Summer 2025"},{"e":13200,"s":12634,"ev":"ESA Summer 2025"},{"e":1800,"s":2130,"ev":"ESA Summer 2025"},{"e":1800,"s":1684,"ev":"ESA Summer 2025"},{"e":960,"s":1113,"ev":"ESA Summer 2025"},{"e":1980,"s":1837,"ev":"ESA Summer 2025"},{"e":2040,"s":1783,"ev":"ESA Summer 2025"},{"e":8400,"s":7674,"ev":"ESA Summer 2025"},{"e":4500,"s":4634,"ev":"ESA Summer 2025"},{"e":2700,"s":2574,"ev":"ESA Summer 2025"},{"e":2880,"s":2970,"ev":"ESA Summer 2025"},{"e":7200,"s":5142,"ev":"ESA Summer 2025"},{"e":2100,"s":1980,"ev":"ESA Summer 2025"},{"e":1080,"s":1116,"ev":"ESA Summer 2025"},{"e":9900,"s":9212,"ev":"ESA Summer 2025"},{"e":3600,"s":4028,"ev":"ESA Summer 2025"},{"e":4200,"s":4466,"ev":"ESA Summer 2025"},{"e":9900,"s":12801,"ev":"ESA Summer 2025"},{"e":22500,"s":22462,"ev":"ESA Summer 2025"},{"e":2280,"s":2638,"ev":"ESA Summer 2025"},{"e":3600,"s":3844,"ev":"ESA Summer 2025"},{"e":3420,"s":3420,"ev":"ESA Summer 2025"},{"e":4200,"s":3803,"ev":"ESA Summer 2025"},{"e":9900,"s":9750,"ev":"ESA Summer 2025"},{"e":1200,"s":1214,"ev":"ESA Summer 2025"},{"e":1800,"s":2452,"ev":"ESA Summer 2025"},{"e":11100,"s":11404,"ev":"ESA Summer 2025"},{"e":7200,"s":7314,"ev":"ESA Summer 2025"},{"e":3000,"s":2518,"ev":"ESA Summer 2025"},{"e":1200,"s":1032,"ev":"ESA Summer 2025"},{"e":1380,"s":1484,"ev":"ESA Summer 2025"},{"e":900,"s":986,"ev":"ESA Summer 2025"},{"e":2100,"s":2225,"ev":"ESA Summer 2025"},{"e":1200,"s":677,"ev":"ESA Summer 2025"},{"e":2100,"s":2170,"ev":"ESA Summer 2025"},{"e":3900,"s":3945,"ev":"ESA Summer 2025"},{"e":9000,"s":9529,"ev":"ESA Summer 2025"},{"e":3600,"s":5252,"ev":"ESA Summer 2025"},{"e":6300,"s":6246,"ev":"ESA Summer 2025"},{"e":9000,"s":9410,"ev":"ESA Summer 2025"},{"e":4200,"s":4113,"ev":"ESA Summer 2025"},{"e":1920,"s":2133,"ev":"ESA Summer 2025"},{"e":13800,"s":14949,"ev":"ESA Summer 2025"},{"e":3000,"s":3132,"ev":"ESA Summer 2025"},{"e":2700,"s":2812,"ev":"ESA Summer 2025"},{"e":3300,"s":2897,"ev":"ESA Summer 2025"}],"dbins":{"-8":16,"18":4,"0":57,"-4":43,"-14":5,"-6":26,"-10":21,"4":34,"24":2,"8":9,"6":15,"-2":50,"2":52,"12":10,"-12":5,"-30":4,"14":4,"16":3,"10":7,"-28":2,"26":2,"-16":3,"-20":1,"30":2,"-24":1,"20":1},"sbins":{"40":3,"0":2,"2":4,"20":7,"12":28,"6":31,"8":45,"14":24,"10":36,"4":10,"16":14,"22":3,"26":4,"18":14,"30":1,"24":2,"32":1,"28":1},"model":[{"bucket":"<20m","lo":0,"hi":1200,"n":43,"r50":1.059,"r80":1.266,"d50":46,"d80":208},{"bucket":"20-40m","lo":1200,"hi":2400,"n":93,"r50":1.04,"r80":1.164,"d50":70,"d80":271},{"bucket":"40-60m","lo":2400,"hi":3600,"n":61,"r50":1.014,"r80":1.1,"d50":41,"d80":276},{"bucket":"1-2h","lo":3600,"hi":7200,"n":105,"r50":0.99,"r80":1.063,"d50":-54,"d80":277},{"bucket":">2h","lo":7200,"hi":1000000000,"n":77,"r50":1.008,"r80":1.046,"d50":69,"d80":529}],"kpi":{"n":379,"n_sheet":231,"pct_over":53,"speech_med":154,"speech_p80":234,"setup_p80":1029,"setup_over10":60}};
+const css = k => getComputedStyle(document.documentElement).getPropertyValue(k).trim();
+const tip = document.getElementById("tip");
+function showTip(ev, html) { tip.innerHTML = html; tip.style.opacity = 1; tip.style.left = Math.min(innerWidth - 300, ev.clientX + 14) + "px"; tip.style.top = (ev.clientY + 12) + "px"; }
+function hideTip() { tip.style.opacity = 0; }
+const fmtM = s => { const m = Math.round(s/60); return (m>=0?"+":"") + m + "m"; };
+const fmtHM = s => { const h = Math.floor(s/3600), m = Math.round(s%3600/60); return h ? `${h}h${String(m).padStart(2,"0")}` : `${m}m`; };
+const SC = { "ESA Winter 2026": "--s1", "ESA Summer 2025": "--s2", "ESA Summer 2022": "--s3" };
+
+// ---- scatter (log-log) ----
+(function(){
+  const svg = document.getElementById("scatter");
+  const W=900, H=480, L=56, R=16, T=12, B=40;
+  const lo = Math.log10(5*60), hi = Math.log10(9*3600);
+  const x = v => L + (Math.log10(v)-lo)/(hi-lo)*(W-L-R);
+  const y = v => H-B - (Math.log10(v)-lo)/(hi-lo)*(H-T-B);
+  let g = "";
+  const ticks = [300, 600, 1200, 2400, 3600, 7200, 4*3600, 8*3600];
+  for (const t of ticks) {
+    g += `<line x1="${x(t)}" y1="${T}" x2="${x(t)}" y2="${H-B}" stroke="var(--grid)"/>`;
+    g += `<text x="${x(t)}" y="${H-B+16}" text-anchor="middle" font-size="11" fill="var(--muted)">${fmtHM(t)}</text>`;
+    g += `<line x1="${L}" y1="${y(t)}" x2="${W-R}" y2="${y(t)}" stroke="var(--grid)"/>`;
+    g += `<text x="${L-6}" y="${y(t)+4}" text-anchor="end" font-size="11" fill="var(--muted)">${fmtHM(t)}</text>`;
+  }
+  g += `<line x1="${x(5*60)}" y1="${y(5*60)}" x2="${x(9*3600)}" y2="${y(9*3600)}" stroke="var(--ref)" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+  g += `<text x="${x(3600*5.2)}" y="${y(3600*6)}" font-size="11" fill="var(--muted)">estimate = actual</text>`;
+  for (const p of DATA.scatter) {
+    g += `<circle cx="${x(p.e)}" cy="${y(p.s)}" r="4.5" fill="var(${SC[p.ev]})" fill-opacity="0.72" data-t="${p.ev} · est ${fmtHM(p.e)} → slot ${fmtHM(p.s)} (${fmtM(p.s-p.e)})"/>`;
+  }
+  g += `<text x="${(W)/2}" y="${H-4}" text-anchor="middle" font-size="11" fill="var(--ink-2)">submitted estimate</text>`;
+  g += `<text transform="rotate(-90)" x="${-(H/2)}" y="14" text-anchor="middle" font-size="11" fill="var(--ink-2)">actual slot</text>`;
+  svg.innerHTML = g;
+})();
+
+// ---- delta histogram (diverging) ----
+(function(){
+  const svg = document.getElementById("hist");
+  const W=900, H=300, L=40, R=16, T=14, B=34;
+  const bins = DATA.dbins; const keys = Object.keys(bins).map(Number).sort((a,b)=>a-b);
+  const maxN = Math.max(...Object.values(bins));
+  const x = v => L + (v+30)/62*(W-L-R);
+  const bw = (W-L-R)/31 - 2;
+  let g = "";
+  for (let n = 10; n <= maxN; n += 10) {
+    const yy = H-B - n/maxN*(H-T-B);
+    g += `<line x1="${L}" y1="${yy}" x2="${W-R}" y2="${yy}" stroke="var(--grid)"/><text x="${L-5}" y="${yy+4}" text-anchor="end" font-size="10" fill="var(--muted)">${n}</text>`;
+  }
+  for (const k of keys) {
+    const n = bins[k]; const h = n/maxN*(H-T-B);
+    const col = k < 0 ? "var(--s1)" : k >= 2 ? "var(--s2)" : "var(--ref)";
+    g += `<rect x="${x(k)}" y="${H-B-h}" width="${bw}" height="${h}" rx="3" fill="${col}" data-t="${k}…${k+2} min: ${n} runs"/>`;
+  }
+  g += `<line x1="${x(0)-1}" y1="${T}" x2="${x(0)-1}" y2="${H-B}" stroke="var(--ink-2)" stroke-width="1"/>`;
+  for (const t of [-30,-20,-10,0,10,20,30]) g += `<text x="${x(t)+bw/2}" y="${H-B+15}" text-anchor="middle" font-size="10" fill="var(--muted)">${t>0?"+"+t:t}</text>`;
+  g += `<text x="${W/2}" y="${H-3}" text-anchor="middle" font-size="11" fill="var(--ink-2)">actual slot − estimate (minutes) · ±30 clipped</text>`;
+  svg.innerHTML = g;
+})();
+
+// ---- dumbbell p50→p80 by bucket ----
+(function(){
+  const svg = document.getElementById("dumb");
+  const W=900, H=260, L=90, R=40, T=16, B=36;
+  const m = DATA.model;
+  const lo = -2, hi = 9;
+  const x = v => L + (v-lo)/(hi-lo)*(W-L-R);
+  const rowH = (H-T-B)/m.length;
+  let g = "";
+  for (let v = lo; v <= hi; v++) {
+    g += `<line x1="${x(v)}" y1="${T}" x2="${x(v)}" y2="${H-B}" stroke="var(--grid)"/>`;
+    if (v % 2 === 0) g += `<text x="${x(v)}" y="${H-B+15}" text-anchor="middle" font-size="10" fill="var(--muted)">${v>0?"+"+v:v}m</text>`;
+  }
+  g += `<line x1="${x(0)}" y1="${T}" x2="${x(0)}" y2="${H-B}" stroke="var(--ink-2)"/>`;
+  m.forEach((b, i) => {
+    const cy = T + rowH*i + rowH/2;
+    const x1 = x(b.d50/60), x2 = x(b.d80/60);
+    g += `<text x="${L-8}" y="${cy+4}" text-anchor="end" font-size="12" fill="var(--ink-2)">${b.bucket}</text>`;
+    g += `<line x1="${x1}" y1="${cy}" x2="${x2}" y2="${cy}" stroke="var(--s1-soft)" stroke-width="3"/>`;
+    g += `<circle cx="${x1}" cy="${cy}" r="6" fill="var(--s1)" data-t="${b.bucket}: median ${fmtM(b.d50)} (n=${b.n})"/>`;
+    g += `<circle cx="${x2}" cy="${cy}" r="6" fill="var(--s1-soft)" stroke="var(--s1)" stroke-width="1.5" data-t="${b.bucket}: p80 ${fmtM(b.d80)} (n=${b.n})"/>`;
+    g += `<text x="${x2+12}" y="${cy+4}" font-size="11" fill="var(--ink-2)">${fmtM(b.d80)}</text>`;
+  });
+  g += `<text x="${W/2}" y="${H-3}" text-anchor="middle" font-size="11" fill="var(--ink-2)">slot overrun (minutes) · ● median → ○ p80</text>`;
+  svg.innerHTML = g;
+})();
+
+// ---- setup histogram ----
+(function(){
+  const svg = document.getElementById("setup");
+  const W=900, H=280, L=40, R=16, T=16, B=34;
+  const bins = DATA.sbins; const keys = Object.keys(bins).map(Number).sort((a,b)=>a-b);
+  const maxN = Math.max(...Object.values(bins));
+  const x = v => L + v/42*(W-L-R);
+  const bw = (W-L-R)/21 - 2;
+  let g = "";
+  for (let n = 10; n <= maxN; n += 10) {
+    const yy = H-B - n/maxN*(H-T-B);
+    g += `<line x1="${L}" y1="${yy}" x2="${W-R}" y2="${yy}" stroke="var(--grid)"/><text x="${L-5}" y="${yy+4}" text-anchor="end" font-size="10" fill="var(--muted)">${n}</text>`;
+  }
+  for (const k of keys) {
+    const n = bins[k]; const h = n/maxN*(H-T-B);
+    g += `<rect x="${x(k)}" y="${H-B-h}" width="${bw}" height="${h}" rx="3" fill="var(--s1)" data-t="${k}–${k+2} min setup: ${n}"/>`;
+  }
+  g += `<line x1="${x(10)}" y1="${T}" x2="${x(10)}" y2="${H-B}" stroke="var(--crit)" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+  g += `<text x="${x(10)+5}" y="${T+12}" font-size="11" fill="var(--crit)">booked: 10m</text>`;
+  g += `<line x1="${x(15)}" y1="${T}" x2="${x(15)}" y2="${H-B}" stroke="var(--good)" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+  g += `<text x="${x(15)+5}" y="${T+12}" font-size="11" fill="var(--good)">proposed: 15m</text>`;
+  for (const t of [0,10,20,30,40]) g += `<text x="${x(t)}" y="${H-B+15}" text-anchor="middle" font-size="10" fill="var(--muted)">${t}${t===40?"+":""}</text>`;
+  g += `<text x="${W/2}" y="${H-3}" text-anchor="middle" font-size="11" fill="var(--ink-2)">setup minutes (2-min bins, 40+ folded)</text>`;
+  svg.innerHTML = g;
+})();
+
+// model table + data table
+document.getElementById("modeltable").innerHTML = DATA.model.map(b =>
+  `<tr><td>${b.bucket}</td><td>${b.n}</td><td>${b.r50.toFixed(3)}</td><td>${b.r80.toFixed(3)}</td><td>${fmtM(b.d50)}</td><td>${fmtM(b.d80)}</td></tr>`).join("");
+document.getElementById("datatable").innerHTML = DATA.scatter.map(p =>
+  `<tr><td>${p.ev.replace("ESA ","")}</td><td>${fmtHM(p.e)}</td><td>${fmtHM(p.s)}</td><td>${fmtM(p.s-p.e)}</td></tr>`).join("");
+
+// hover layer
+document.querySelectorAll("[data-t]").forEach(el => {
+  el.addEventListener("mousemove", ev => showTip(ev, el.getAttribute("data-t")));
+  el.addEventListener("mouseleave", hideTip);
+});
+</script>

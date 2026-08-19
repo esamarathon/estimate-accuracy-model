@@ -1,0 +1,154 @@
+{
+  "name": "esa-estimate-accuracy-model",
+  "version": 2,
+  "fitted_on": {
+    "ESA Summer 2022": 132,
+    "ESA Summer 2025": 148,
+    "ESA Summer 2026": 179,
+    "ESA Winter 2026": 99
+  },
+  "definitions": "slot = intro speech + run + outro speech; the time a run occupies between setups",
+  "components": {
+    "run_vs_estimate_delta": {
+      "n": 410,
+      "p50": -180,
+      "p80": 69,
+      "p95": 553,
+      "mean": -200.9
+    },
+    "speech": {
+      "n": 410,
+      "p50": 169,
+      "p80": 254,
+      "p95": 435,
+      "mean": 198.8
+    },
+    "setup": {
+      "n": 402,
+      "p50": 720,
+      "p80": 1066,
+      "p95": 1551,
+      "mean": 810.0,
+      "pct_over_600s": 65
+    }
+  },
+  "slot_table": [
+    {
+      "bucket": "<20m",
+      "lo_s": 0,
+      "hi_s": 1200,
+      "n": 65,
+      "slot_ratio_p50": 1.069,
+      "slot_ratio_p80": 1.258,
+      "slot_delta_p50_s": 63,
+      "slot_delta_p80_s": 203
+    },
+    {
+      "bucket": "20-40m",
+      "lo_s": 1200,
+      "hi_s": 2400,
+      "n": 131,
+      "slot_ratio_p50": 1.025,
+      "slot_ratio_p80": 1.155,
+      "slot_delta_p50_s": 46,
+      "slot_delta_p80_s": 260
+    },
+    {
+      "bucket": "40-60m",
+      "lo_s": 2400,
+      "hi_s": 3600,
+      "n": 92,
+      "slot_ratio_p50": 1.001,
+      "slot_ratio_p80": 1.096,
+      "slot_delta_p50_s": 3,
+      "slot_delta_p80_s": 235
+    },
+    {
+      "bucket": "1-2h",
+      "lo_s": 3600,
+      "hi_s": 7200,
+      "n": 168,
+      "slot_ratio_p50": 0.984,
+      "slot_ratio_p80": 1.058,
+      "slot_delta_p50_s": -82,
+      "slot_delta_p80_s": 254
+    },
+    {
+      "bucket": ">2h",
+      "lo_s": 7200,
+      "hi_s": 86400,
+      "n": 102,
+      "slot_ratio_p50": 1.008,
+      "slot_ratio_p80": 1.047,
+      "slot_delta_p50_s": 69,
+      "slot_delta_p80_s": 529
+    }
+  ],
+  "flat_rules": {
+    "slot_p80_under_2h_s": 239,
+    "slot_p80_over_2h_s": 529,
+    "speech_allowance_p50_s": 169,
+    "speech_allowance_p80_s": 254,
+    "recommended_setup_default_s": 900
+  },
+  "per_event": {
+    "ESA Summer 2022": {
+      "n": 132,
+      "slot_delta": {
+        "n": 132,
+        "p50": 0,
+        "p80": 239,
+        "p95": 667,
+        "mean": -32.9
+      },
+      "pct_slots_over": 49,
+      "total_est_h": 154.0,
+      "total_slot_h": 152.8
+    },
+    "ESA Summer 2025": {
+      "n": 148,
+      "slot_delta": {
+        "n": 148,
+        "p50": 28,
+        "p80": 266,
+        "p95": 900,
+        "mean": -0.6
+      },
+      "pct_slots_over": 54,
+      "total_est_h": 180.2,
+      "total_slot_h": 180.1
+    },
+    "ESA Summer 2026": {
+      "n": 179,
+      "slot_delta": {
+        "n": 179,
+        "p50": -4,
+        "p80": 210,
+        "p95": 691,
+        "mean": -29.6
+      },
+      "pct_slots_over": 50,
+      "total_est_h": 205.8,
+      "total_slot_h": 204.4
+    },
+    "ESA Winter 2026": {
+      "n": 99,
+      "slot_delta": {
+        "n": 99,
+        "p50": 91,
+        "p80": 405,
+        "p95": 1097,
+        "mean": 88.7
+      },
+      "pct_slots_over": 56,
+      "total_est_h": 146.2,
+      "total_slot_h": 148.6
+    }
+  },
+  "notes": [
+    "Runner estimates are honest: use them as the run-time predictor; never inflate.",
+    "Overhead is additive (speech), not proportional \u2014 corr(estimate, overrun) ~ 0.",
+    "Per-runner bias does not replicate between events (corr -0.12, n=24): no runner-history features.",
+    "Flag tails: <20m runs (worst relative spread) and >2h runs (worst absolute tail)."
+  ]
+}

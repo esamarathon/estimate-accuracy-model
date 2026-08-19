@@ -1,0 +1,243 @@
+event,schedule,item_idx,game,category,sub_cat,runner,players,run_type,est_s,length_s,scheduled,how,score
+ESA Winter 2026,2026-winter1,0,Donkey Kong Bananza,Any%,Any%,5eil,5eil,SINGLE,4800,4800,2026-02-07T18:00:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,1,Sly 3: Honor Among Thieves + Showcase,Episodes 5 + 6,Episode 5 + 6 (english),icen,IceN,SINGLE,6000,6000,2026-02-07T19:35:00+01:00,fuzzy-game(0.83),0.9
+ESA Winter 2026,2026-winter1,2,Sly 3: Honor Among Thieves,Hackathon,Hackathon,icen,"IceN, ThaRixer",COOP,780,780,2026-02-07T21:20:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,3,Pokémon X/Y,Any%,Any%,alaapo,Alaapo,SINGLE,14400,14400,2026-02-07T21:48:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,4,Colin McRae: DiRT,Career Any%,Career Any%,cousin,Cousin,SINGLE,8700,8700,2026-02-08T02:03:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,5,Princess Peach: Showtime!,Any%,any%,ali_robotnik,Ali_Robotnik,SINGLE,9000,9000,2026-02-08T04:43:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,6,Super Mario World,96 Exits,96 Exits,akisto,Akisto,SINGLE,5700,5700,2026-02-08T07:28:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,7,LEGO Indiana Jones: The Original Adventures,Artifact Rush,Artifact Rush,carkoon,carkoon,SINGLE,4800,4800,2026-02-08T09:18:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,8,Tomb Raider I-III Remastered,Tomb Raider I: Any% Glitchless,Tomb Raider I - Any% Glitchless,mellow1892,mellow1892,SINGLE,5700,5700,2026-02-08T10:53:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,9,Spyro: Enter the Dragonfly,Any% (No Early Ripto),Any% No Early Ripto,yeswally1,yeswally1,SINGLE,4680,4680,2026-02-08T12:43:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,10,Ghostland Yard,Any%,Any%,oddkara,OddKara,SINGLE,1980,1980,2026-02-08T14:16:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,11,Mario Kart Wii,32 Tracks (Skips),32 Track Skips,idk_maniac,"idk_maniac, hypnoshark",SINGLE,4500,4500,2026-02-08T15:04:00+01:00,exact-game,1.0
+ESA Winter 2026,2026-winter1,12,Mario Kart Wii,Glitch Showcase,Glitch Showcase,idk_maniac,idk_maniac,SINGLE,1500,1500,2026-02-08T16:24:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,13,Old School RuneScape,The Gauntlet ($20%),The Gauntlet - $25%,wardrums,WarDrums,SINGLE,7200,7200,2026-02-08T17:04:00+01:00,exact-game,1.0
+ESA Winter 2026,2026-winter1,14,Call of Duty: Black Ops II Zombies,Origins Easter Egg (Patched),Origins Easter Egg Patched,huthtv,Huth,SINGLE,3300,3300,2026-02-08T19:19:00+01:00,exact-game,1.0
+ESA Winter 2026,2026-winter1,15,Call of Duty: Black Ops II Zombies,Richtofen Super Easter Egg (2P Co-Op),Richtofen Super Easter Egg (2p),eris,"Eris, Huth",COOP,3300,3300,2026-02-08T20:19:00+01:00,exact-game,1.21
+ESA Winter 2026,2026-winter1,16,Quake 64,Easy Run,Easy Run,sphere,Sphere,SINGLE,900,900,2026-02-08T21:29:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,17,Kingdom Hearts: Birth by Sleep Final Mix HD,All Stories (Beginner),All Stories Beginner,rebeldragon95,RebelDragon95,SINGLE,10800,10800,2026-02-08T21:59:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,19,Castlevania: Symphony of the Night,All Bosses,All Bosses,diagon,diagon,SINGLE,2340,2340,2026-02-09T06:44:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,20,Hades 2,All Regions,All Regions,ocke,OckE,SINGLE,2700,2700,2026-02-09T07:38:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,21,Fallout 3,All Unique Weapons,All Unique Weapons,tacoccino,spiccytacos,SINGLE,6000,6000,2026-02-09T08:38:00+01:00,exact-game,1.0
+ESA Winter 2026,2026-winter1,22,Spyro 2: Ripto's Rage!,40 Orb,40 Orb,bradley_gam1ng,Bradley_Gam1ng,SINGLE,3480,3480,2026-02-09T10:33:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,24,Gran Turismo 4,All Driving Missions,All Driving Missions,cousin,Cousin,SINGLE,8400,8400,2026-02-09T13:56:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,27,Macbat 64,100%,100%,kaspi,Kaspi,SINGLE,1080,1200,2026-02-09T19:41:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,28,Sly Cooper and the Thievius Raccoonus,Coinless Any%,Any%,nightf1y,NightF1y,SINGLE,2400,2400,2026-02-09T20:16:00+01:00,exact-game,1.0
+ESA Winter 2026,2026-winter1,29,Tomb Raider: Legend,Any%,Any%,cadarev,Cadarev,SINGLE,2700,2700,2026-02-09T21:11:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,31,Donkey Kong 64,Randomizer,DK64 Randomizer,fuzzyness,fuzzyness,SINGLE,10800,10800,2026-02-10T04:16:00+01:00,exact-game,1.0
+ESA Winter 2026,2026-winter1,32,Driver: Parallel Lines,Any%,Any%,zoton2,zoton2,SINGLE,7800,7800,2026-02-10T07:31:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,33,Mark of the Deep,Any%,Any%,bambam,BamBam,SINGLE,3600,3600,2026-02-10T09:56:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,34,A Bug's Life,Any%,Any%,oddkara,OddKara,SINGLE,1680,1680,2026-02-10T11:11:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,35,GTFO,"R4E1 (100%, Glitchless, Duo, With Logs)",Level: R4E1 Glitchless 100% Duo Logs,zepheniah_,"Zepheniah, skysleepie",COOP,3600,3600,2026-02-10T11:54:00+01:00,exact-game,1.21
+ESA Winter 2026,2026-winter1,40,Crash Racing Trifecta,Any% (No Major Glitches),Any% (NMG),hypnoshark,hypnoshark,SINGLE,9000,9000,2026-02-10T18:39:00+01:00,exact-game,0.7
+ESA Winter 2026,2026-winter1,41,Toree Saturn,Story Mode,Story Mode,kaspi,Kaspi,SINGLE,1080,1080,2026-02-10T21:24:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,42,Borderlands 4,Any% (Co-Op),Any% Co-Op,vahisht,"Vahisht, havrd",COOP,21600,21600,2026-02-10T21:57:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,43,Yakuza 4 Remastered,Any% (Easy),Any% (Easy),rebeldragon95,RebelDragon95,SINGLE,11100,11100,2026-02-11T04:12:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,44,Tiny Toon Adventures: Buster Busts Loose!,Any%,Any%,edenalsda,EdenalSDA,SINGLE,1800,1800,2026-02-11T07:32:00+01:00,fuzzy-game(0.71),1.5
+ESA Winter 2026,2026-winter1,45,Prey (2017),No OoB,No OoB,cropax,Cropax,SINGLE,2700,2700,2026-02-11T08:17:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,47,Mirror's Edge,%ynA,Any% Relay Race,eris,Eris,RELAY_RACE,3600,3600,2026-02-11T13:32:00+01:00,exact-game,0.5
+ESA Winter 2026,2026-winter1,48,Super Mario Bros. 3,Any% (Warpless),Any% Warpless,lui,"Lui, AliceHK8",COOP,4200,4200,2026-02-11T14:47:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,49,Crash Bandicoot: N. Sane Trilogy,Crash Bandicoot 3: Warped: 108%,Crash Bandicoot 3: Warped 108%,alaapo,Alaapo,SINGLE,8400,8400,2026-02-11T16:12:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,50,Sonic Adventure 2: Battle,Hero Story (Crowd Control),Hero Story (Crowd Control),fuzzyness,fuzzyness,SINGLE,5400,5400,2026-02-11T18:47:00+01:00,fuzzy-game(0.75),1.5
+ESA Winter 2026,2026-winter1,51,Walt Disney World Quest Magical Racing Tour,Any%,any%,spaceloz,SpaceLozzy,SINGLE,3600,3600,2026-02-11T20:32:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,52,Call Of Duty: Modern Warfare 2,Any% (Recruit),Any% Recruit ,eris,Eris,SINGLE,6300,6300,2026-02-11T21:47:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,53,Darkest Dungeon,Defeat Hag,Defeat Hag,rebeldragon95,RebelDragon95,SINGLE,3000,3000,2026-02-11T23:47:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,54,Hades,All Weapons,All Weapons,ocke,OckE,SINGLE,6300,6300,2026-02-12T01:07:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,55,Super Mario Odyssey,Darker Side,Darker side,tilotech,TiloTech,SINGLE,11700,11700,2026-02-12T03:07:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,56,The Nightmare Before Christmas: Oogie's Revenge,All Bosses,All Bosses,theprofesser,TheProfesser,SINGLE,2040,2040,2026-02-12T06:37:00+01:00,fuzzy-game(0.62),1.5
+ESA Winter 2026,2026-winter1,57,X-COM: UFO Defense / UFO: Enemy Unknown,Any%,Any%,happycamper,happycamper,SINGLE,3300,3300,2026-02-12T07:26:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,58,Myulk: kampen om det öppna landskapet,Defeat Slymmer,Defeat Slymmer,ananace,Ananace,SINGLE,1800,1800,2026-02-12T08:36:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,60,Journey to the Savage Planet,Any%,Any%,bambam,BamBam,SINGLE,1200,1200,2026-02-12T10:16:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,61,Yu-Gi-Oh! Forbidden Memories,Any% (15-card),Any% (15-card),tharixer,ThaRixer,SINGLE,9000,9000,2026-02-12T10:51:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,63,Smarties Meltdown,All Sectors,All Sectors,greensnowdog,GreenSnowDog,SINGLE,1980,1980,2026-02-12T14:26:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,64,Super Metroid,GT Classic Co-op,GT  Code Classic,lightquartz,"Dyce_NL, Soren",SINGLE,2700,1800,2026-02-12T15:14:00+01:00,exact-game,0.4
+ESA Winter 2026,2026-winter1,65,The Legend of Zelda: The Minish Cap,Any%,Any%,incommunicado,incommunicado,SINGLE,6120,6120,2026-02-12T15:59:00+01:00,fuzzy-game(0.67),1.5
+ESA Winter 2026,2026-winter1,66,Sound Voltex: Exceed Gear,Showcase,Showcase%,ozzy88,"ozzy88, Kepsert",COOP,3600,3600,2026-02-12T17:56:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,67,Mario Kart World,All Grands Prix,All Grand Prix,hypnoshark,hypnoshark,SINGLE,5880,5880,2026-02-12T19:11:00+01:00,exact-game,1.0
+ESA Winter 2026,2026-winter1,68,Gaming Quiz League,1v1v1v1 Showcase Match,1v1v1v1,smaklosa,Smaklosa,SINGLE,3600,3600,2026-02-12T21:04:00+01:00,fuzzy-game(0.60),0.83
+ESA Winter 2026,2026-winter1,69,Super Mario 64,120 Star Randomizer (Nonstop),120 Star Non-Stop,360chrism,360chrism,SINGLE,6300,6300,2026-02-12T22:19:00+01:00,fuzzy-game(0.75),0.83
+ESA Winter 2026,2026-winter1,71,Sonic the Hedgehog (2006),Silver's Story (Any%),Silver's Story Any%,dreegon,DreeGon,SINGLE,1200,1200,2026-02-13T01:49:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,72,Sonic Unleashed (Recompiled),All Medals,All Medals,broodlai,Broodlai,SINGLE,13800,13800,2026-02-13T02:24:00+01:00,fuzzy-game(0.67),1.5
+ESA Winter 2026,2026-winter1,73,World of Illusion,Any%,Any%,edenalsda,EdenalSDA,SINGLE,1200,1200,2026-02-13T06:29:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,76,Ultros,Any% (No Major Glitches),Any% No Major Glitches,kaspi,Kaspi,SINGLE,1800,1800,2026-02-13T11:46:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,77,Gimmick! 2,Any% Assisted,any% assisted,kepsert,Kepsert,SINGLE,2100,2100,2026-02-13T12:31:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,78,Dust: An Elysian Tail,Any% (Warps),Any% Warps,murtag,Murtag,SINGLE,1200,1200,2026-02-13T13:21:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,79,Xenoblade Chronicles: Future Connected,Any% (Casual Mode),Any% (Casual Mode),rebeldragon95,RebelDragon95,SINGLE,2700,2700,2026-02-13T13:56:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,80,Hot Lava,"All Courses (No ACM, Double Jump, Without Trials)",AC/No ACM - Double Jump (Without Trials),senydro,senydro,SINGLE,2100,2100,2026-02-13T14:56:00+01:00,exact-game,1.17
+ESA Winter 2026,2026-winter1,82,Super Star Wars: Return of the Jedi,Any%,Any%,edenalsda,EdenalSDA,SINGLE,2400,2400,2026-02-13T18:01:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,83,The Legend of Zelda: A Link to the Past,Randomizer (Crowd Control),Crowd Control,nilssonalex92,nilssonalex92,SINGLE,10800,10800,2026-02-13T18:56:00+01:00,fuzzy-game(0.89),1.17
+ESA Winter 2026,2026-winter1,84,Streets of Rogue,Any%,Any%,flick,Flick,SINGLE,1500,1500,2026-02-13T22:11:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,85,Tomb Raider I-III Remastered,Tomb Raider III: Any% Glitchless,Tomb Raider III - Any% Glitchless,mellow1892,mellow1892,SINGLE,7500,7500,2026-02-13T22:51:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,86,Sly 2: Band of Thieves,NG+ (PS5 1.00),PS5 1.0 NG+,prince_ostrava,Ostrava,SINGLE,13800,13800,2026-02-14T01:11:00+01:00,exact-game,0.6
+ESA Winter 2026,2026-winter1,87,Chakan: The Forever Man,Any%,Any%,edenalsda,EdenalSDA,SINGLE,1200,1200,2026-02-14T05:16:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,88,Timespinner,Randomizer,Randomizer,neomatamune,neomatamune ,SINGLE,3600,3600,2026-02-14T05:51:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,89,LEGO Star Wars: The Complete Saga,Free Play,Free Play,carkoon,carkoon,SINGLE,4800,4800,2026-02-14T07:06:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,90,UFO 50,Rail Heist,Rail Heist (Gold),flick,Flick,SINGLE,1080,1080,2026-02-14T08:41:00+01:00,exact-game,1.17
+ESA Winter 2026,2026-winter1,91,UFO 50,Waldorf's Journey (Cherry),Rail Heist (Gold),flick,Flick,SINGLE,1080,300,2026-02-14T08:59:00+01:00,exact-game,0.5
+ESA Winter 2026,2026-winter1,92,DOOM (Kex Port),E1-E3 (UV-Speed),E1-3 UV-Speed,murtag,Murtag,SINGLE,1320,1320,2026-02-14T09:19:00+01:00,exact-game,1.1
+ESA Winter 2026,2026-winter1,93,Castlevania: Portrait of Ruin,Max Randomizer (Scavenger Mode),"Max randomiser, scavenger mode",toasty_stoat,Toasty_Stoat,SINGLE,9900,9900,2026-02-14T09:56:00+01:00,exact-game,1.1
+ESA Winter 2026,2026-winter1,95,Mario Party 1,Mini-game Island Any%,Mini-Game Island Any%,fuzzyness,Fuzzyness,SINGLE,2700,2520,2026-02-14T14:11:00+01:00,fuzzy-game(0.67),1.5
+ESA Winter 2026,2026-winter1,97,Elden Ring: Nightreign,"Any% (Solo, Glitchless)",Solo Any% Glitchless,catalystz,catalystz,SINGLE,10200,10200,2026-02-14T16:23:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter1,98,Mario Party Superstars,All Minigames Relay,All Minigames Relay,360chrism,360chrism,RELAY,6300,6300,2026-02-14T19:28:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter2,0,Noddy and the Magic Book,Any%,Any%,sixrock,SixRock,SINGLE,6300,6300,2026-02-09T14:00:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter2,1,Tiger Woods PGA Tour 2005,Complete All Courses,All Courses,hypnoshark,hypnoshark,SINGLE,6300,6300,2026-02-09T16:00:00+01:00,exact-game,1.17
+ESA Winter 2026,2026-winter2,3,Classics Archipelago,4-Man Co-Op,4 man Co-op,majestikmelville,"MajestikMelville, Mizzow, YunikoYokai, ollymuirs_",COOP,14400,14400,2026-02-09T19:25:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter2,5,The Painscreek Killings,All Keys,All Keys,rudhira,rudhira,SINGLE,1500,1500,2026-02-10T12:00:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter2,6,Bob the Builder: Can We Fix It?,All Missions (Easy),All Missions Easy,bradley_gam1ng,Bradley_Gam1ng,SINGLE,900,900,2026-02-10T12:40:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter2,7,Bejeweled 3,All Quests,All Quests,ocke,OckE,SINGLE,3000,3000,2026-02-10T13:10:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter2,12,Might and Magic VII: For Blood and Honor,Any% (No Major Glitches),Any% NMG,sothangel,sothangel,SINGLE,3600,4800,2026-02-10T20:55:00+01:00,fuzzy-game(0.75),0.7
+ESA Winter 2026,2026-winter2,15,A Corgi's Cozy Hike,100%,100%,spaceloz,SpaceLozzy,SINGLE,6300,6300,2026-02-11T13:15:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter2,16,Quest 64,Any% (US),Any% US,fuzzyness,fuzzyness,SINGLE,5400,5400,2026-02-11T15:15:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter2,17,"Duck, Quack, Shoot",10-Person Score Contest,10 Person Score Contest,kingeurope,KingEurope & Friends,RELAY,1500,1500,2026-02-11T17:00:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter2,18,Touhou: Dai-chan's Great Adventure: World's End,Good Ending,Good Ending,dreegon,DreeGon,SINGLE,1800,1800,2026-02-11T17:40:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter2,20,Sonic Battle,Sonic's Story (Upgraded Emerl),Sonic's Story (Upgraded Emerl),rebeldragon95,RebelDragon95,SINGLE,1500,1500,2026-02-11T19:30:00+01:00,exact-game,1.5
+ESA Winter 2026,2026-winter2,21,Command & Conquer: Red Alert 2,"Allied Campaign (Hard Mode, Glitchless, Cutscene%)","Hard Mode, Allied Campaign, Glitchless",nevflinn,Nevflinn,SINGLE,4380,5280,2026-02-11T20:10:00+01:00,exact-game,1.33
+ESA Summer 2025,2025-summer1,0,Jak and Daxter: The Precursor Legacy,Any%,Any%,sir_jazzberry,Sir_Jazzberry,SINGLE,3000,3000,2025-06-28T14:00:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,1,Star Wars Jedi Knight: Jedi Academy,All Levels (No Stablaunch),All Levels - NoStablaunch,laay,Laay,SINGLE,2400,2400,2025-06-28T15:05:00+02:00,exact-game,0.9
+ESA Summer 2025,2025-summer1,2,Halo: Reach,Legendary,Legendary,seclusive,"Seclusive, Sorix",SINGLE,5100,5100,2025-06-28T16:00:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,3,League of Legends,1v5 (With Bots),1v5 Bots,aetienne,AEtienne,SINGLE,1200,1200,2025-06-28T17:40:00+02:00,exact-game,1.17
+ESA Summer 2025,2025-summer1,4,Halo Infinite,All Missions (Easy),Easy All Mission,caitbot,caitbot,SINGLE,4620,4620,2025-06-28T18:15:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,5,Sly 2: Band of Thieves,Episode 7 (100%),Episode 7: 100%,slysonic,Slysonic,SINGLE,2100,2100,2025-06-28T19:47:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,6,Borderlands 2,Any% (Co-op),Co-Op Any%,oggy,"Oggyerino, yisk",COOP,6600,6600,2025-06-28T20:37:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,7,Pokémon Red,Any% (Glitchless),Any% Glitchless,aetienne,AEtienne,SINGLE,7200,7200,2025-06-28T22:42:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,8,Paper Mario,Any% (No ACE),Any% (No ACE),jakebopdart,JakeBopDart,SINGLE,8100,8100,2025-06-29T00:57:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,9,Like A Dragon Gaiden: The Man Who Erased His Name,Any%,Any%,rebeldragon95,RebelDragon95,SINGLE,5700,5700,2025-06-29T03:27:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,11,Hades,OwO (One Weapon Only),OwO (One Weapon Only),ocke,OckE,SINGLE,4800,4800,2025-06-29T06:02:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,12,Skeleton Krew,Easy Mode,Easy Mode,jokaah,Joka,SINGLE,1200,1200,2025-06-29T07:37:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,13,Snake Rattle 'n' Roll,Warpless,Warpless,dxtr,Dxtr,SINGLE,1080,1080,2025-06-29T08:12:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,15,The Simpsons: Bartman Meets Radioactive Man,Any%,Any%,apollosmug,ApolloSmug,SINGLE,1260,1260,2025-06-29T09:00:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,16,Data Man,2P Any%,2P Any%,niss3,"Niss3, Fleke",COOP,1200,1200,2025-06-29T09:21:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,17,Battletoads & Double Dragon,Any% (Co-op),Co-op Any%,syn_stream,"sYn, TypicalFantasyX",COOP,2100,2100,2025-06-29T09:56:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,18,Tiny Toon Adventures,Any%,Any%,hirexen,hirexen,SINGLE,1020,1020,2025-06-29T10:46:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,20,Pilotwings,Any%,Any%,lucha_gym_2,Lucha_Gym,SINGLE,1800,2100,2025-06-29T11:58:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,22,The Elder Scrolls V: Skyrim + Glitch Exhibition,All Daedric Quests,All Daedric Quests,pekkanen,pekkanen,SINGLE,7320,7320,2025-06-29T16:13:00+02:00,fuzzy-game(0.71),1.5
+ESA Summer 2025,2025-summer1,23,Mort the Chicken,Any%,Any % ,spaceloz,SpaceLozzyCF,SINGLE,1860,1860,2025-06-29T18:30:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,24,Crash Tag Team Racing,Any% (No PSW),Any% (No PSW),hypnoshark,hypnoshark,SINGLE,2400,2400,2025-06-29T19:16:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,25,Super Metroid,GT Classic,GT Classic,darkxoa,DarkXoa,SINGLE,2820,2820,2025-06-29T20:11:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,26,Uncharted 2: Among Thieves,Any%,Any% (Single Run),shemp,Shemp,SINGLE,8400,8400,2025-06-29T21:13:00+02:00,exact-game,0.83
+ESA Summer 2025,2025-summer1,27,Star Trek: Voyager - Elite Force,Any%,Any%,sphere,Sphere,SINGLE,3300,3300,2025-06-29T23:48:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,28,Resident Evil 5,"Lost In Nightmares (Co-op, Glitchless)",Rocketless,yatogaminl,"YatogamiNL, Smaclosa",COOP,7200,1200,2025-06-30T00:58:00+02:00,exact-game,0.5
+ESA Summer 2025,2025-summer1,29,Resident Evil 5,Any% NG+,Rocketless,yatogaminl,"YatogamiNL, Smaclosa",COOP,7200,7200,2025-06-30T01:18:00+02:00,exact-game,0.5
+ESA Summer 2025,2025-summer1,30,Spyro 2: Ripto's Rage!,Any%,Any%,dylanjayfox,DylanJayFox,SINGLE,720,1200,2025-06-30T03:18:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,32,Golden Sun: The Lost Age,Randomizer (Boss Blackout),Randomizer - Boss Blackout,neomatamune,Neomatamune,SINGLE,9900,9900,2025-06-30T05:33:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,33,Hollow Knight,True Ending (No Major Glitches),True Ending NMG,azere,azere,SINGLE,5400,5400,2025-06-30T08:33:00+02:00,exact-game,0.83
+ESA Summer 2025,2025-summer1,35,Mario Kart Wii,32 Tracks (No Skips),32 Track - No Skips,karhuma,Karhuma,SINGLE,4800,4800,2025-06-30T11:48:00+02:00,exact-game,1.1
+ESA Summer 2025,2025-summer1,36,Indiana Jones and the Great Circle,Any% (Restricted),Any% Restricted,83ky,83kY,SINGLE,5100,5100,2025-06-30T13:23:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,37,Final Fantasy VII,Any%,any%,zheal,Zheal,SINGLE,19800,21600,2025-06-30T15:03:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,38,Paper Mario: The Thousand Year Door,Any%,Any%,alw0,"Alw0, JakeBopDart, Hackedia",RACE,10800,10800,2025-06-30T21:18:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,39,Dragon Quest XI S,Any% (Glitchless),Any% Glitchless,sylwer,sylwer,SINGLE,19800,19800,2025-07-01T00:33:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,40,Harry Potter and the Chamber of Secrets,Any%,Any%,5mon,5mon,SINGLE,6300,6300,2025-07-01T06:18:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,41,Evergate,Any%,Any%,sunnymuffinsr,SunnymuffinSR,SINGLE,2400,2400,2025-07-01T08:18:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,42,Streets of Rage 2,Skate Mania Mod,Skate Mania Mod,misternyanta,misternyanta,SINGLE,3300,3300,2025-07-01T09:13:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,43,Super Mario Bros. 3,Any% (Warpless),Any% Warpless ,rh4kor,Rh4kor,SINGLE,3600,3600,2025-07-01T10:23:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,44,Kingdom Hearts II,Randomizer,Randomizer,mizzow,MrMizzow vs. Staratar,RACE,10800,9600,2025-07-01T11:38:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,45,Super Mario Odyssey,Any%,Any%,dansta2106,"Dansta2106, Rodillo, TiloTech, The_H_Pandin",SINGLE,3720,4200,2025-07-01T14:33:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,46,Psychonauts,Any%,Any%,syn_sr,synn1_,SINGLE,2700,2700,2025-07-01T15:58:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,47,Ocarina of Time in Minecraft,Any%,Any%,sajiki,Sajiki,SINGLE,6120,6600,2025-07-01T16:58:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,48,Live,Beat the Game,Beat the Game,sajiki,Sajiki,SINGLE,540,540,2025-07-01T19:03:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,49,The Legend of Zelda: Ocarina of Time,All Dungeons (No SRM),All Dungeons (no SRM),nalle,NalleSounds,SINGLE,5100,5100,2025-07-01T19:27:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,50,Ratchet & Clank: Into The Nexus,NG+,NG+,syn_sr,synn1_,SINGLE,1800,1800,2025-07-01T21:07:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,51,Ratchet: Deadlocked,"NG+ (No LC, Co-op)",NG+ No LC Co-Op,itzscaree,"ItzScaRee, robo, Mucke1Man, AbyssToaster",COOP_RACE,3420,3420,2025-07-01T21:52:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,52,Spyro: Year of the Dragon,100 Egg,100 Egg,dylanjayfox,"Shemp, DylanJayFox",SINGLE,3900,4500,2025-07-01T23:04:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,54,Skylanders: Spyro's Adventure (Wii/WiiU),Any%,Any%,river25,rivertwentyfive,SINGLE,4200,4200,2025-07-02T04:04:00+02:00,fuzzy-game(1.00),1.0
+ESA Summer 2025,2025-summer1,55,DreamWorks Dragons Dawn of New Riders,Any% (V-sync Off),Any% (V-sync off),mod366,MoD366,SINGLE,4200,4200,2025-07-02T05:29:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,56,Total Overdose,Any%,Any%,zoton2,zoton2,SINGLE,4200,4200,2025-07-02T06:54:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,57,No One Lives Forever 2: A Spy in H.A.R.M.'s Way,Any% (Moderniser),Moderniser%,vahisht,Vahisht,SINGLE,5400,5400,2025-07-02T08:19:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,58,Psi-Ops: The Mindgate Conspiracy,Any%,Any%,kainalo,Kainalo,SINGLE,2100,2100,2025-07-02T10:04:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,59,Deus Ex: Invisible War,Any%,any%,suimachine,SuiMachine,SINGLE,2160,2160,2025-07-02T10:54:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,60,UFO 50,Avianos (Gold Disk),Avianos - Gold Disk,flick,Flick,SINGLE,900,900,2025-07-02T11:45:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,61,UFO 50,Fist Hell,Fist Hell - Any%,flick,Flick,SINGLE,1200,1200,2025-07-02T12:15:00+02:00,exact-game,1.17
+ESA Summer 2025,2025-summer1,62,SaGa: Emerald Beyond,"Bonnie & Formina (NG, QoL Mod)",Bonnie & Formina NG (QoL Mod),denhonator,denhonator,SINGLE,7200,7200,2025-07-02T12:50:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,63,Rocky (2002),Movie Mode: Champ,Movie Mode: Champ ,nilssonalex92,NilssonAlex92,SINGLE,3000,3000,2025-07-02T15:05:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,64,Pokémon Sapphire,Any% (Glitchless),Any% Glitchless,alw0,"Alw0, BluMagma",RACE,8400,8400,2025-07-02T16:10:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,65,Mirror's Edge,Any% (Relay Race),Any% (Relay Race),myths,"Myths, Sorix, SilverC, lurven, Baratdatwarat, Erisrine, Jackyrite",RELAY_RACE,3000,3000,2025-07-02T18:45:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,66,Marvel's Spider-Man: Miles Morales,NG+ (Any Difficulty),NG+ Any% (Any Difficulty),rebeldragon95,RebelDragon95,SINGLE,8700,8700,2025-07-02T19:50:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,67,Need For Speed: Carbon,Career Any% (NG),Career Any% (NG),cousin,Cousin,SINGLE,7200,7200,2025-07-02T22:30:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,68,Looney Tunes Racing,All Acme Challenges,All Acme Challenges,hypnoshark,hypnoshark,SINGLE,2400,2400,2025-07-03T00:45:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,69,"Haiku, the Robot",Any%,Any%,xoneris,Xoneris,SINGLE,2100,2100,2025-07-03T01:40:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,70,Daxter,101%,101%,nokidoki,Noki Doki,SINGLE,11700,11700,2025-07-03T02:30:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,71,Ratchet & Clank: Going Commando,All Platinum Bolts,All Platinum Bolts,snee,SNEEPYY,SINGLE,4500,4500,2025-07-03T06:00:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,72,No Time To Explain Remastered,Any%,any%,wardrums,WarDrums_,SINGLE,1500,1500,2025-07-03T07:30:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,73,Secret Agent Clank,Burger King,Burger King,itzscaree,ItzScaRee,SINGLE,1080,1080,2025-07-03T08:10:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,74,DKC X Mario,Any%,Any%,rh4kor,Rh4kor,RACE,2100,2100,2025-07-03T08:43:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,75,Hitman: World of Assassination,Roulette Run Invalid,Roulette Run Invalid,havrd,havrd,RELAY,4200,4200,2025-07-03T09:33:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,76,VVVVVV,No OoB,No OoB,laxxus,Laxxus,SINGLE,1080,1080,2025-07-03T10:58:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,78,Sonic Project '06,Sonic (Gemless),Gemless%,shemp,Shemp,SINGLE,2520,2520,2025-07-03T12:10:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,79,Spider-Man (2000),Any% (Easy),Any% (Easy),spyran,Spyran,SINGLE,1800,1800,2025-07-03T13:07:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,80,Spider-Man 2: Enter Electro,Any% (Easy Mode),Any% Easy,spyran,Spyran,SINGLE,2040,2040,2025-07-03T13:52:00+02:00,exact-game,1.17
+ESA Summer 2025,2025-summer1,81,Spyro the Dragon,Vortex,Vortex,anne_chovy,Anne_Chovy,SINGLE,1560,1560,2025-07-03T14:41:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,83,Looney Tunes: Space Race,All Tournaments,All Tournaments,freezechamp,freezechamp,SINGLE,5700,5700,2025-07-03T16:22:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,84,Flash Game Gauntlet 2,Any%?,Any%?,tharixer,ThaRixer & Friends,SINGLE,4800,4800,2025-07-03T18:12:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,86,Marvel's Guardians of the Galaxy,Any% (NG+),Full Game NG+,kainalo,Kainalo,SINGLE,18900,17700,2025-07-03T20:22:00+02:00,exact-game,0.75
+ESA Summer 2025,2025-summer1,87,Tomb Raider Chronicles,Any%,Any%,cadarev,Cadarev,SINGLE,3000,3000,2025-07-04T01:27:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,88,Trials Rising,Ninja Showcase,Ninja Showcase,murtag,Murtag,SINGLE,3600,3600,2025-07-04T02:27:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,90,Pokémon SoulSilver,Any% (Manipless),Any% Manipless,alw0,Alw0,SINGLE,9300,9300,2025-07-04T04:20:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,91,Super Mario Galaxy 2,Any%,Any%,galaxtic,Galaxtic,SINGLE,11400,11400,2025-07-04T07:10:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,92,Castlevania,Beat the Game (Easy),Beat the game - Easy,jkl0ser,JkL0ser,SINGLE,900,900,2025-07-04T10:35:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,93,The Last Ninja,Beat the Game,Beat the game,jkl0ser,JkL0ser,SINGLE,600,600,2025-07-04T11:05:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,94,Adventure of Bayou Billy,Beat the Game,Beat the game,jkl0ser,JkL0ser,SINGLE,1500,1500,2025-07-04T11:30:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,95,Plok,Any%,any%,laxxus,Laxxus,SINGLE,2220,2220,2025-07-04T12:10:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,96,Little Samson,All Stages (Easy),All Stages Easy,laxxus,Laxxus,SINGLE,1200,1200,2025-07-04T13:02:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,97,Mighty Final Fight,Any% (Haggar),Haggar,jkl0ser,JkL0ser,SINGLE,1080,1080,2025-07-04T13:37:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,98,Jackal,Any% (2 Player),Any% (2 Player),syn_stream,"sYn, TypicalFantasyX",COOP,900,900,2025-07-04T14:10:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,99,Inspector Gadget,Any%,Any%,apollosmug,ApolloSmug,SINGLE,1380,1380,2025-07-04T14:30:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,100,Skyblazer,Any%,any%,laxxus,Laxxus,SINGLE,1800,1800,2025-07-04T14:58:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,101,Rugrats: Adventures in Gameland,Any%,Any% Newborn,apollosmug,"ApolloSmug, JkL0ser",SINGLE,1080,720,2025-07-04T15:38:00+02:00,fuzzy-game(1.00),1.0
+ESA Summer 2025,2025-summer1,102,Widget,Any%,Any%,hirexen,hirexen,SINGLE,720,720,2025-07-04T16:03:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,103,Ghoul School,Any% (Best of 3),Any% (Best of 3),jkl0ser,"JkL0ser, EndySWE",RACE,1200,1200,2025-07-04T16:30:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,104,Gremlins 2: The New Batch,Any%,any%,endyswe,"EndySWE, hirexen",RACE,900,900,2025-07-04T17:05:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,105,River City Ransom,Novice,Novice,jokaah,Joka,SINGLE,600,600,2025-07-04T17:30:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,106,Spacegulls,All Cosmo Chicks,All Cosmo Chick,jkl0ser,JkL0ser,SINGLE,660,660,2025-07-04T17:50:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,107,Spartan X 2,Normal,Normal,hirexen,hirexen,SINGLE,600,600,2025-07-04T18:11:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,109,NES Shuffler,Donation Shuffler,Donation Shuffler,gikkman,"Gikkman, Laxxus, CartinaCow, Joka, hirexen, Dxtr, EndySWE",COOP_RACE,3600,4800,2025-07-04T19:16:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,110,Vib-Ribbon,All Songs,All Songs,alaapo,Alaapo,SINGLE,1200,1200,2025-07-04T20:36:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,111,Monster Racer,Any% (20-Player Relay),Any% Relay,icen,"IceN, ThaRixer",RELAY,5700,5700,2025-07-04T20:56:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,112,Call of Duty: Black Ops II Zombies,Mob of the Dead (Easter Egg),Mob of the Dead Easter Egg,huthtv,Huth,SINGLE,1500,1500,2025-07-04T22:46:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer1,113,Gran Turismo,Any% (No Licence Prizes),Any% (No Licence Prizes),cousin,Cousin,SINGLE,6120,6120,2025-07-04T23:26:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,114,Crysis 2,Any%,any%,suimachine,SuiMachine,SINGLE,6900,6900,2025-07-05T01:18:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,115,Digimon World 4,Any% (Co-op),any% (co-op),nalle,"NalleSounds, FantaTanked",COOP,13200,13200,2025-07-05T03:43:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,116,Theatrhythm Final Bar Line,Showcase,Showcase,givralyriame,Givra,SINGLE,1800,1800,2025-07-05T07:23:00+02:00,fuzzy-game(0.60),1.0
+ESA Summer 2025,2025-summer1,117,Lil Gator Game,All Friends,All Friends,greensnowdog,GreenSnowDog,SINGLE,1800,1800,2025-07-05T07:58:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,118,Hotdog Samurai,Any%,Any%,aeshmah,Aeshmah_,SINGLE,960,960,2025-07-05T08:43:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,119,Unreal,Any%,Any%,myths,Myths,SINGLE,1980,1980,2025-07-05T09:14:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,120,Vengeance Hunters,Any% (Loony),Loony Any%,greenalink,GreenalinkSDA,SINGLE,2040,2040,2025-07-05T10:02:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,121,Undertale,True Pacifist Ending (Glitchless),True Pacifist Ending Glitchless,eden8,"eden8, Galaxtic",RACE,8400,8400,2025-07-05T10:51:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,122,Tomb Raider (2013),Any%,Any%,cadarev,Cadarev,SINGLE,4500,4800,2025-07-05T13:26:00+02:00,fuzzy-game(0.67),1.5
+ESA Summer 2025,2025-summer1,123,Skate 2,Any%,Any%,rebeldragon95,RebelDragon95,SINGLE,2700,2700,2025-07-05T15:01:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer1,126,Super Metroid,Any% (KPDR Route),Any% KPDR,gebbu,"Gebbu, Timmon",RACE,2880,2880,2025-07-05T19:01:00+02:00,exact-game,1.17
+ESA Summer 2025,2025-summer1,127,Classic Mario Series,Stage Relay,Stage Relay Showcase,apollosmug,ApolloSmug,COOP,7200,7200,2025-07-05T20:04:00+02:00,exact-game,1.17
+ESA Summer 2025,2025-summer2,0,Street Boyz,All Stages (NG+),NG+ All Stages,rebeldragon95,RebelDragon95,SINGLE,2100,2100,2025-06-29T14:00:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,1,Splatter Master,Any% (Easy),Any% Easy,abysstoaster,AbyssToaster,SINGLE,1080,1080,2025-06-29T14:50:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,2,Ratchet & Clank Future: Tools of Destruction,100%,100%,torpadorp,Torpadorp,SINGLE,9900,9900,2025-06-29T15:23:00+02:00,fuzzy-game(0.83),1.5
+ESA Summer 2025,2025-summer2,3,Call of Duty: Modern Warfare 2 (2009),Spec Ops,Spec Ops,eris,Erisrine,SINGLE,3600,3600,2025-06-29T18:23:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,4,We Love Katamari,Roll Up the Sun (No Boost),Roll up the sun (No Boost),greensnowdog,GreenSnowDog,SINGLE,4200,4200,2025-06-29T19:38:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,5,Yu-Gi-Oh! Forbidden Memories,All Duelists (15-Card),All Duelists 15 Card,dylanjayfox,DylanJayFox,SINGLE,9900,9900,2025-06-29T21:03:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,7,Final Fantasy VII Rebirth,Any% (Easy),Any% Easy,desa,desa35,SINGLE,22500,22500,2025-06-30T10:00:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,8,Tetris Effect: Connected,Journey (Normal),Journey Mode - Normal,juzockt_,JuZockt,SINGLE,2280,2280,2025-06-30T16:30:00+02:00,exact-game,1.17
+ESA Summer 2025,2025-summer2,9,Rift of the Necrodancer,All Minigames and Bosses & Impossible Song Showcase,All Minigames & Bosses & Song Showcase on Impossible Mode,ocke,OckE,SINGLE,3600,3600,2025-06-30T17:23:00+02:00,exact-game,1.17
+ESA Summer 2025,2025-summer2,10,HROT,Any%,any%,suimachine,SuiMachine,SINGLE,3420,3420,2025-06-30T18:38:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,11,Quantum of Solace,Any%,Any%,jackyrite,Jackyrite,SINGLE,4200,4200,2025-06-30T19:50:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,12,Lost Judgment,Any%,Any%,rebeldragon95,RebelDragon95,SINGLE,9900,9900,2025-06-30T21:15:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,15,Go Go Ackman 3,Any%,Any%,rh4kor,Rh4kor,SINGLE,1200,1200,2025-07-01T14:15:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,17,Deadstorm Pirates,All Levels (1P2C),1p2p all levels,murtag,Murtag,SINGLE,1800,1800,2025-07-01T17:25:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer2,18,Ghost of Tsushima: Director's Cut,"Any% (NG+, Lethal, With DLC)",Any% NG+ Lethal with DLC,aeshmah,Aeshmah_,SINGLE,11100,11100,2025-07-01T18:10:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,19,Elden Ring,DLC Randomizer (2P1C),2P1C DLC Randomizer,catalystz,"catalystz, Puppery",COOP,7200,7200,2025-07-01T21:30:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,21,The Stanley Parable: Ultra Deluxe,Any%,Any%,duncte123,duncte,SINGLE,3000,3000,2025-07-02T10:00:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer2,22,Where's Waldo,Easy (Best of 3),"Easy, Race (Best of 3)",syn_stream,sYn vs. Joka,COOP_RACE,1200,1200,2025-07-02T11:05:00+02:00,exact-game,0.8
+ESA Summer 2025,2025-summer2,23,Wacky Races,Any%,Any%,hirexen,hirexen,SINGLE,1380,1380,2025-07-02T11:40:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,24,Gruniozerca 2 - The Great Cavy Rescue!,All Carrots (100%),All Carrots (100%),gikkman,Gikkman,SINGLE,900,900,2025-07-02T12:18:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,25,Home Alone,Any% (Live World Record Tutorial),Any% Live World Record Tutorial,apollosmug,ApolloSmug,SINGLE,2100,2100,2025-07-02T12:48:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,26,Home Alone 2,Any%,Any%,nintendnat,nintendonatalie,SINGLE,1200,1200,2025-07-02T13:38:00+02:00,exact-game,1.0
+ESA Summer 2025,2025-summer2,27,Magical Pop'n,Any%,any%,laxxus,Laxxus,SINGLE,2100,2100,2025-07-02T13:58:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,30,Streets of Rage 4,"Stage & Enemy Randomizer (Shiva, Hard)",Stage & Enemy randomiser run as SoR4 Shiva [HARD],greenalink,GreenalinkSDA,SINGLE,3900,3900,2025-07-02T15:43:00+02:00,exact-game,0.94
+ESA Summer 2025,2025-summer2,31,Cyberpunk 2077,Phantom Liberty (Glitchless),Phantom Liberty Any% Glitchless,sothangel,Sothangel,SINGLE,9000,9000,2025-07-02T17:03:00+02:00,exact-game,1.25
+ESA Summer 2025,2025-summer2,32,In Sound Mind,Any%,Any%,itzscaree,ItzScaRee,SINGLE,3600,3600,2025-07-02T19:48:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,33,Spyro 2: Ripto's Rage!,100%,100%,bradley_gam1ng,Bradley_Gam1ng,SINGLE,6300,6300,2025-07-02T21:03:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,34,Astro Bot,Any%,Any%,dreegon,DreeGon,SINGLE,9000,9000,2025-07-02T23:03:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,36,Star Wars: Battlefront II (2005),RotE All Missions (With Bonuses),RotE All Missions with bonuses,captainemu,CaptainEmu,SINGLE,4200,4200,2025-07-03T10:00:00+02:00,fuzzy-game(0.83),1.5
+ESA Summer 2025,2025-summer2,37,Pong: The Next Level,57 Gold Bars,57 Gold Bars,ripperrootm,RipperRooTMUF,SINGLE,1920,1920,2025-07-03T11:25:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,38,Hogwarts Legacy,Kill Ranrok,Kill Ranrok,wardrums,WarDrums_,SINGLE,13800,13800,2025-07-03T12:12:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,39,Deus Ex: Mankind Divided,Any%,Any%,vahisht,Vahisht,SINGLE,3000,3000,2025-07-03T16:17:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,40,Hitman: Blood Money,Showcase,Showcase,thekotti,TheKotti,SINGLE,2700,2700,2025-07-03T17:22:00+02:00,exact-game,1.5
+ESA Summer 2025,2025-summer2,41,Neo Mario Galaxy,Any%,Any%,snrobi,SNRobi,SINGLE,3300,3300,2025-07-03T18:22:00+02:00,exact-game,1.5
